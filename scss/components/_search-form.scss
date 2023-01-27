@@ -1,0 +1,25 @@
+/**
+  * Form element useful for website second version
+  */
+.search-form {
+  i {
+    font-size: $font-size-search-form-i;
+    padding: 0 .5rem;
+    color: $color-search-form-i;
+  }
+
+  input {
+    font-family: $font-family-input;
+    font-size: $font-size-search-form-input;
+    border: hidden;
+    background-color: $bg-color-input;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    display: none;
+  }
+}

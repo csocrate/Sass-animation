@@ -9,16 +9,25 @@
   $primary-color:                       #9356DC;
   $secondary-color:                     #FF79DA;
   $tertiary-color:                      #99E2D0;
+
   $black:                               #000;
-  $white:                               #fff;
   $current-color:                         currentColor;
+  $transparent:                           transparent;
+  $white:                               #FFF;
+
+/**
+  * Typography
+  * 
+  */
+  $font-family-txt:                      'Roboto', sans-serif;
+  $font-size-init:                       16px;
+  $font-size-normal:                     1em;
 
 /**
   * .body
   * 
   */
-$font-family-body:                      'Roboto', sans-serif;
-$font-size-body:                        16px;
+$font-size-body:                        $font-size-init;
 $font-style-body:                       normal;
 $font-weight-body:                      400;
 $line-height-body:                      19px;
@@ -32,7 +41,6 @@ $bg-color-body:                         $white;
 $color-a:                               $current-color;
 $color-a-alt:                           $primary-color;
 
-
 // --------------------------------------------------
 // COMPONENTS
 // --------------------------------------------------
@@ -41,10 +49,30 @@ $color-a-alt:                           $primary-color;
   * Loading spinner
   * 
   */
-$font-size-loading:                     .875em;
+$font-size-loading:                     $font-size-normal * .875;
 $color-loading:                         $white;
 $loading-border-top-color:              $secondary-color;
 $loading-border-left-color:             $tertiary-color;
 $loading-border-right-color:            $primary-color;
 $loading-border-bottom-color:           $primary-color;
 $bg-color-loading:                      $black;
+
+/**
+  * Search form
+  * 
+  */
+$font-family-input:                     $font-family-txt;
+$font-size-search-form-i:               $font-size-normal * 1.2;
+$font-size-search-form-input:           $font-size-normal * 1.1;
+$color-search-form-i:                   lighten($black, 30%);
+$bg-color-input:                        $transparent;
+
+// --------------------------------------------------
+// LAYOUT
+// --------------------------------------------------
+
+/**
+  * Banner
+  * 
+  */
+$bg-color-first-child:                  lighten($black, 95%);

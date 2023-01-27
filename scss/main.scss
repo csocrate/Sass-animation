@@ -8,8 +8,10 @@
   'base/typography';
 
 @import
+  'layout/banner',
   'layout/header',
   'layout/wrapper';
 
 @import
-  'components/loading-spinner';
+  // 'components/loading-spinner',
+  'components/search-form';
