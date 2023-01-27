@@ -6,16 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ohmyfood</title>
   <meta name="description" content="Réservez votre restaurant gastronomique et composez votre menu en ligne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="public/css/style.css">
   <meta name="robots" content="noindex,nofollow">
 </head>
-<body class=".body">
+<body class="body">
   <div class="wrapper">
-    <div class="header-site">
-      <a href="http://localhost/ohmyfood/">
-        <img src="images/ohmyfood.png" alt="ohmyfood">
+    <header class="header-site">
+      <a href="http://localhost/ohmyfood/">        
+        <picture>
+          <source 
+            media="(max-width: 767px)" 
+            srcset="images/ohmyfood.png">
+          <source 
+            media="(min-width: 768px) and (max-width: 1399px)" 
+            srcset="images/ohmyfood_md.png">
+          <source 
+            media="(min-width: 1600px )" 
+            srcset="images/ohmyfood_lg.png">
+          <img 
+            src="images/ohmyfood_lg.png" 
+            alt="ohmyfood">
+        </picture>
       </a>
-    </div>
+    </header>
     <div class="loading">
       <div>
         <span class="load">

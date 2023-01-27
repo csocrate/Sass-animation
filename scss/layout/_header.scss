@@ -1,0 +1,21 @@
+.header-site {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+
+  @media (min-width: 1400px ) {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  @media (min-width: 1600px ) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
