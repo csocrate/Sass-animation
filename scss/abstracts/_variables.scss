@@ -11,7 +11,10 @@
   $tertiary-color:                      #99E2D0;
 
   $black:                               #000;
+  $black-light:                           lighten($black, 30%); // #4D4D4D
   $current-color:                         currentColor;
+  $grey:                                  lighten($black, 88%); // #F2F2F2
+  $grey-light:                            lighten($black, 97%); // #F7F7F7
   $transparent:                           transparent;
   $white:                               #FFF;
 
@@ -20,8 +23,13 @@
   * 
   */
   $font-family-txt:                      'Roboto', sans-serif;
+
   $font-size-init:                       16px;
   $font-size-normal:                     1em;
+
+  $line-height-normal:                   1;
+
+  $inherit:                              'inherit';
 
 /**
   * .body
@@ -29,7 +37,7 @@
   */
 $font-size-body:                        $font-size-init;
 $font-style-body:                       normal;
-$font-weight-body:                      400;
+$font-weight-body:                      300;
 $line-height-body:                      19px;
 $color-body:                            $black;
 $bg-color-body:                         $white;
@@ -38,6 +46,17 @@ $bg-color-body:                         $white;
   * Other bases
   * 
   */
+//== h1 ==
+$font-size-h1-home:                     $font-size-normal * 1.75;
+$font-size-h1-home-md:                  $font-size-normal * 1.65;
+$font-size-h1-home-lg:                  $font-size-normal * 2.05;
+$line-height-h1-home:                   $line-height-normal * 1.2;
+
+//== p ==
+$font-size-p-banner:                    $font-size-normal * 1.2;
+$line-height-p-banner:                  $line-height-normal * 1.15;
+
+//== a ==
 $color-a:                               $current-color;
 $color-a-alt:                           $primary-color;
 
@@ -64,8 +83,22 @@ $bg-color-loading:                      $black;
 $font-family-input:                     $font-family-txt;
 $font-size-search-form-i:               $font-size-normal * 1.2;
 $font-size-search-form-input:           $font-size-normal * 1.1;
-$color-search-form-i:                   lighten($black, 30%);
+$font-weight-input-value:               500;
+$color-input-value:                     $black-light;
+$color-search-form-i:                   $black-light;
 $bg-color-input:                        $transparent;
+
+/**
+  * Banner call to action
+  * 
+  */
+$font-size-banner-cta:                    $font-size-normal * 1.1;
+$font-size-banner-cta-xxl:                $font-size-normal * 1.25;
+$font-weight-banner-cta:                  500;
+$color-banner-cta:                        $white;
+$color-banner-cta-alt:                    $white;
+$bg-color-banner-cta:                     linear-gradient($secondary-color,$primary-color);
+$bg-color-banner-cta-alt:                 linear-gradient($primary-color,$secondary-color);
 
 // --------------------------------------------------
 // LAYOUT
@@ -75,4 +108,5 @@ $bg-color-input:                        $transparent;
   * Banner
   * 
   */
-$bg-color-first-child:                  lighten($black, 95%);
+$bg-color-first-child:                  $grey;
+$bg-color-last-child:                   $grey-light;

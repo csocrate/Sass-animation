@@ -23,6 +23,10 @@
   * 
   */
 /**
+  * Banner call to action
+  * 
+  */
+/**
   * Banner
   * 
   */
@@ -40,7 +44,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   background-color: #FFF;
   color: #000;
@@ -49,7 +53,7 @@
 .wrapper a {
   text-decoration: none;
   color: currentColor;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .wrapper a:hover {
@@ -63,6 +67,44 @@
   object-fit: cover;
 }
 
+h1.h1-home {
+  font-size: 1.75em;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  h1.h1-home {
+    font-size: 1.65em;
+  }
+}
+@media (min-width: 1600px) {
+  h1.h1-home {
+    font-size: 2.05em;
+  }
+}
+
+p.p-banner {
+  font-size: 1.2em;
+  line-height: 1.15;
+  text-align: center;
+}
+
+a.banner-cta {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #FFF;
+  cursor: pointer;
+}
+a.banner-cta:hover {
+  transform: scale(1.03);
+  color: #FFF;
+}
+@media (min-width: 1600px) {
+  a.banner-cta {
+    font-size: 1.25em;
+  }
+}
+
 .load {
   font-size: 0.875em;
   color: #FFF;
@@ -70,14 +112,83 @@
 
 .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .banner div:first-child {
-  width: 100%;
+  width: inherit;
   padding: 1rem 0;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #e0e0e0;
+}
+.banner div:last-child {
+  width: inherit;
+  background-color: #f7f7f7;
+}
+.banner div:last-child div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  height: 350px;
+  padding: 2rem 3rem;
+}
+@media (min-width: 768px) {
+  .banner div:last-child div {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner div:last-child div {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner div:last-child div {
+    height: 450px;
+  }
+}
+.banner div:last-child div h1,
+.banner div:last-child div p {
+  margin-bottom: 1.15rem;
+}
+@media (min-width: 768px) {
+  .banner div:last-child div h1 {
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .banner div:last-child div h1 {
+    max-width: inherit;
+  }
+}
+.banner div:last-child div a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 4px 12px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.banner div:last-child div a:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+@media (min-width: 768px) {
+  .banner div:last-child div a {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1600px) {
+  .banner div:last-child div a {
+    margin-top: 2rem;
+    padding: 1.55rem 1.85rem;
+  }
 }
 
 .header-site {
@@ -108,9 +219,6 @@
   position: relative;
 }
 
-/**
-  * Form element useful for website second version
-  */
 .search-form i {
   font-size: 1.2em;
   padding: 0 0.5rem;
@@ -121,6 +229,10 @@
   font-size: 1.1em;
   border: hidden;
   background-color: transparent;
+}
+.search-form input[value] {
+  color: #4d4d4d;
+  font-weight: 500;
 }
 .search-form input:focus {
   outline: none;

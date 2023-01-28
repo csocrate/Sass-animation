@@ -1,3 +1,45 @@
+h1 {
+  &.h1-home {
+    font-size: $font-size-h1-home;
+    line-height: $line-height-h1-home;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-h1-home-md;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: $font-size-h1-home-lg;
+    }
+  }
+}
+
+p {
+  &.p-banner {
+    font-size: $font-size-p-banner;
+    line-height: $line-height-p-banner;
+    text-align: center;
+  }
+}
+
+a {
+  &.banner-cta {
+    font-size: $font-size-banner-cta;
+    font-weight: $font-weight-banner-cta;
+    color: $color-banner-cta;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.03);
+      color: $color-banner-cta-alt;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: $font-size-banner-cta-xxl;
+    }
+  }
+}
+
 .load {
   font-size: $font-size-loading;
   color: $color-loading;

@@ -9,7 +9,7 @@
   <link type="text/css" rel="stylesheet" href="public/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/bed4092e49.js" crossorigin="anonymous"></script>
   <meta name="robots" content="noindex,nofollow">
 </head>
@@ -34,8 +34,9 @@
       </a>
     </header>
     <main class="main">
-      <section class="banner">
+      <section id="accueil" class="banner">
         <div>
+          <!-- Form element useful for website second version -->
           <form id="searchForm" action="#" method="get" class="search-form" role="search">
             <span class="search-form__icon">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
@@ -49,7 +50,7 @@
               size="13"
               minlength="4"
               maxlength="20"
-              required>
+              disabled>
             <button 
               type="submit"
               aria-label="Rechercher"
@@ -59,9 +60,19 @@
           </form> <!-- END .search-form -->
         </div>
         <div>
-
+          <div>
+            <h1 class="h1-home">
+              Réservez le menu qui vous convient
+            </h1>
+            <p class="p-banner">
+              Découvrez des restaurants d'exception, sélectionnés par nos soins.
+            </p>
+            <a href="#" class="banner-cta">
+              Explorer nos restaurants
+            </a>
+          </div>
         </div>
-      </section>
+      </section> <!-- # # # # # # # # END #accueil # # # # # # # # -->
     </main>
     <div class="loading">
       <div>

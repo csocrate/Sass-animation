@@ -1,6 +1,3 @@
-/**
-  * Form element useful for website second version
-  */
 .search-form {
   i {
     font-size: $font-size-search-form-i;
@@ -13,6 +10,11 @@
     font-size: $font-size-search-form-input;
     border: hidden;
     background-color: $bg-color-input;
+
+    &[value] {
+      color: $color-input-value;
+      font-weight: $font-weight-input-value;
+    }
 
     &:focus {
       outline: none;
