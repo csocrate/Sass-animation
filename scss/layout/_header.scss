@@ -1,6 +1,6 @@
 .header-site {
   height: 4rem;
-  @include flexbox();
+  @include flexbox(null,center,center,null);
   padding: 2rem 0;
 
   @media (min-width: 1400px ) {

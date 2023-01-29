@@ -1,7 +1,5 @@
 .step {
-  @include flexbox($justify:null, $align:null, $wrap:wrap);
-  // display: flex;
-  // flex-wrap: wrap;
+  @include flexbox(null,null,null,wrap);
   gap: 1.75rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -16,9 +14,7 @@
   }
 
   div {
-    @include flexbox($justify:null);
-    // display: flex;
-    // align-items: center;
+    @include flexbox(null,center,null,null);
     position: relative;
     width: 370px;
     padding-top: 1.85rem;

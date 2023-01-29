@@ -14,7 +14,7 @@
       background-color: $bg-color-last-child;
 
       div {
-        @include flexbox($direction:column);
+        @include flexbox(column,center,center,null);
         max-width: 450px;
         margin: 0 auto;
         height: 350px;

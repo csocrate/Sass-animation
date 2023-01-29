@@ -1,5 +1,5 @@
 .loading {
-  @include flexbox();
+  @include flexbox(null,center,center,null);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -23,7 +23,7 @@
   }
 
   > div {
-    @include flexbox();
+    @include flexbox(null,center,center,null);
     width: 5rem;
     height: 5rem;
 
