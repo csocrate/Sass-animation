@@ -33,3 +33,11 @@
   height: auto;
   object-fit: cover;
 }
+
+.how-it-works {
+  > div {
+    width: 90%;
+  max-width: 1400px;
+  margin: 0 auto 
+  };
+}

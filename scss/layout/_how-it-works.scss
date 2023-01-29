@@ -1,0 +1,18 @@
+.how-it-works {
+  > div {
+    @include flexbox($justify:null, $align:null, $direction:column);
+    // display: flex;
+    // flex-direction: column;
+    padding: 3rem 0;
+
+    h2 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.25rem;
+
+      @media (min-width: 1600px) {
+        margin-top: 2.5rem;
+        margin-bottom: 2.25rem;
+      }
+    }
+  }
+}

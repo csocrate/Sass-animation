@@ -1,0 +1,36 @@
+@mixin box-shadow($color:$black, $amount:85%, $size: 0 5px 12px) {
+  box-shadow: lighten($black, $amount) $size;
+}
+
+/*
+ * @var $content-value, $items-value as argument value.
+ *
+ */
+$content-value:center;    
+$items-value:center;
+
+@mixin flexbox($justify:$content-value, $align:$items-value, $direction:null, $wrap:null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if ($justify == null) {
+    justify-content: unset;
+  }
+
+  @if ($align == null) {
+    align-items: unset;
+  }
+
+  @if ($direction == column) {
+    flex-direction: column;
+  } @else if ($direction == row) {
+    flex-direction: row;
+  }
+
+  @if ($wrap == wrap) {
+    flex-wrap: wrap;
+  } @else if ($direction == nowrap) {
+    flex-wrap: nowrap;
+  } 
+}

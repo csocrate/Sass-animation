@@ -10,8 +10,10 @@
 @import
   'layout/banner',
   'layout/header',
+  'layout/how-it-works',
   'layout/wrapper';
 
 @import
   // 'components/loading-spinner',
-  'components/search-form';
+  'components/search-form',
+  'components/_step-how-it-works';

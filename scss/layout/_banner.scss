@@ -1,8 +1,4 @@
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 
   div {
@@ -18,10 +14,7 @@
       background-color: $bg-color-last-child;
 
       div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox($direction:column);
         max-width: 450px;
         margin: 0 auto;
         height: 350px;
@@ -55,17 +48,18 @@
           }
         }
   
+        /* Call to action */
         a {
           display: inline-block;
           margin-top: 1rem;
           margin-bottom: 1rem;
           padding: 1.25rem 1.5rem;
           border-radius: 50px;
-          box-shadow: rgba($black,.4) 0 4px 12px;
+          @include box-shadow($amount:65%);
           background: $bg-color-banner-cta;
 
-          &:hover {
-            background: $bg-color-banner-cta-alt;
+          &:hover {            
+            box-shadow: rgba($black,.5) 0 7px 12px;
           }
 
           @media (min-width: 768px) {

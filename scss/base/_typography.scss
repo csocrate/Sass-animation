@@ -8,8 +8,31 @@ h1 {
       font-size: $font-size-h1-home-md;
     }
 
+    @media (min-width: 1400px) {
+      font-size: $font-size-h1-home-xl;
+    }
+
     @media (min-width: 1600px) {
-      font-size: $font-size-h1-home-lg;
+      font-size: $font-size-h1-home-xxl;
+    }
+  }
+}
+
+h2 {    
+  &.h2-home {
+    font-size: $font-size-h2-home;
+    line-height: $line-height-h2-home;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-h2-home-md;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-h2-home-xl;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: $font-size-h2-home-xxl;
     }
   }
 }
@@ -38,9 +61,22 @@ a {
       font-size: $font-size-banner-cta-xxl;
     }
   }
+
+  &.a-step {
+    font-size: $font-size-a-step;
+    font-weight: $font-weight-a-step;
+  }
 }
 
-.load {
-  font-size: $font-size-loading;
-  color: $color-loading;
+span {
+  &.load {
+    font-size: $font-size-loading;
+    color: $color-loading;
+  }
+
+  &.nb-step {
+    font-size: $font-size-nb-step;
+    font-weight: $font-weight-nb-step;
+    color: $color-nb-step;
+  }
 }
