@@ -37,11 +37,23 @@ h2 {
   }
 }
 
+h3 {
+  &.h3-card {
+    font-size: $font-size-h3-card;
+    text-transform: capitalize;
+  }
+}
+
 p {
   &.p-banner {
     font-size: $font-size-p-banner;
     line-height: $line-height-p-banner;
     text-align: center;
+  }
+
+  &.p-card {
+    font-size: $font-size-p-card;
+    line-height: $line-height-p-card;
   }
 }
 

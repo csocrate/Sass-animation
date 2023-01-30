@@ -34,6 +34,10 @@
   * Banner
   * 
   */
+/**
+  * Cards
+  * 
+  */
 * {
   margin: 0;
 }
@@ -54,27 +58,37 @@
   color: #000;
 }
 
+.wrapper--home h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 1600px) {
+  .wrapper--home h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.25rem;
+  }
+}
+.wrapper section:not(.banner).how-it-works > div, .wrapper section:not(.banner).cards > div {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrapper section:not(.banner) > div {
+  padding: 3rem 0 4.25rem;
+}
 .wrapper a {
   text-decoration: none;
   color: currentColor;
   transition: 0.5s ease;
 }
-
 .wrapper a:hover {
   color: #9356DC;
 }
-
 .wrapper img {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.how-it-works > div {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 h1.h1-home {
@@ -118,10 +132,19 @@ h2.h2-home {
   }
 }
 
+h3.h3-card {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
 p.p-banner {
   font-size: 1.2em;
   line-height: 1.15;
   text-align: center;
+}
+p.p-card {
+  font-size: 1.1em;
+  line-height: 1.15;
 }
 
 a.banner-cta {
@@ -157,17 +180,17 @@ span.nb-step {
 .banner {
   width: 100%;
 }
-.banner div:first-child {
+.banner > div:first-child {
   width: inherit;
   padding: 1rem 0;
   text-align: center;
   background-color: #e0e0e0;
 }
-.banner div:last-child {
+.banner > div:last-child {
   width: inherit;
   background-color: #f7f7f7;
 }
-.banner div:last-child div {
+.banner > div:last-child div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,36 +202,36 @@ span.nb-step {
   /* Call to action */
 }
 @media (min-width: 768px) {
-  .banner div:last-child div {
+  .banner > div:last-child div {
     max-width: 500px;
   }
 }
 @media (min-width: 1024px) {
-  .banner div:last-child div {
+  .banner > div:last-child div {
     max-width: 700px;
   }
 }
 @media (min-width: 1024px) {
-  .banner div:last-child div {
+  .banner > div:last-child div {
     height: 450px;
   }
 }
-.banner div:last-child div h1,
-.banner div:last-child div p {
+.banner > div:last-child div h1,
+.banner > div:last-child div p {
   margin-bottom: 1.15rem;
 }
 @media (min-width: 768px) {
-  .banner div:last-child div h1 {
+  .banner > div:last-child div h1 {
     max-width: 300px;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
-  .banner div:last-child div h1 {
+  .banner > div:last-child div h1 {
     max-width: inherit;
   }
 }
-.banner div:last-child div a {
+.banner > div:last-child div a {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -217,18 +240,42 @@ span.nb-step {
   box-shadow: #a6a6a6 0 5px 12px;
   background: linear-gradient(#FF79DA, #9356DC);
 }
-.banner div:last-child div a:hover {
+.banner > div:last-child div a:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0 7px 12px;
 }
 @media (min-width: 768px) {
-  .banner div:last-child div a {
+  .banner > div:last-child div a {
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 1600px) {
-  .banner div:last-child div a {
+  .banner > div:last-child div a {
     margin-top: 2rem;
     padding: 1.55rem 1.85rem;
+  }
+}
+
+.cards {
+  background-color: #f7f7f7;
+}
+.cards > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .cards > div > div {
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .cards > div > div {
+    gap: 2rem;
   }
 }
 
@@ -258,22 +305,79 @@ span.nb-step {
 .how-it-works > div {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
-}
-.how-it-works > div h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.25rem;
-}
-@media (min-width: 1600px) {
-  .how-it-works > div h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.25rem;
-  }
 }
 
 .wrapper {
   width: 100%;
   position: relative;
+}
+
+.card {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 46%;
+  }
+}
+@media (min-width: 1400px) {
+  .card {
+    width: 40%;
+  }
+}
+@media (min-width: 1600px) {
+  .card {
+    width: 45%;
+  }
+}
+.card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: #d9d9d9 0 5px 12px;
+}
+.card a:hover {
+  box-shadow: #b3b3b3 0 8px 24px;
+  color: #000;
+}
+.card a .card-details {
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem;
+  order: 2;
+  background-color: #FFF;
+}
+.card a .card-details__left h3 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.35rem;
+}
+.card a .card-details__left p {
+  padding-bottom: 0.35rem;
+}
+.card a .card-details__right i {
+  font-size: 1.75em;
+  color: #FF79DA;
+}
+.card a .card-img {
+  order: 1;
+}
+.card a .card-img,
+.card a .card-img img {
+  width: 100%;
+  height: 220px;
+  max-height: 220px;
+  border-radius: 20px 20px 0 0;
+}
+@media (min-width: 1400px) {
+  .card a .card-img,
+  .card a .card-img img {
+    height: 350px;
+    max-height: 350px;
+  }
 }
 
 .search-form i {

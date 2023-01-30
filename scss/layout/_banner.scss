@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
 
-  div {
+  > div {
     &:first-child {
       width: inherit;
       padding: 1rem 0;
