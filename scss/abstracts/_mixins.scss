@@ -2,6 +2,32 @@
   box-shadow: lighten($black, $amount) $size;
 }
 
+@mixin cta-button($vertical-padding, $horizontal-padding, $size, $bg-color) {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: $vertical-padding $horizontal-padding;
+  border-radius: $size;
+  @include box-shadow($amount:65%);
+  background: $bg-color;
+
+  &:hover {            
+    box-shadow: rgba($black,.5) 0 7px 12px;
+  }
+}
+
+@mixin cta-button-typo($size, $font-weight, $color, $color-alt) {
+  font-size: $size;
+  font-weight: $font-weight;
+  color: $color;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03);
+    color: $color-alt;
+  }
+}
+
 @mixin flexbox($direction, $justify, $align, $wrap) {
   display: flex;
   flex-direction: $direction;

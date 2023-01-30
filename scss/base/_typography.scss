@@ -47,16 +47,8 @@ p {
 
 a {
   &.banner-cta {
-    font-size: $font-size-banner-cta;
-    font-weight: $font-weight-banner-cta;
-    color: $color-banner-cta;
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.03);
-      color: $color-banner-cta-alt;
-    }
-
+    @include cta-button-typo($font-size-banner-cta, $font-weight-banner-cta, $color-banner-cta, $color-banner-cta-alt);
+    
     @media (min-width: 1600px) {
       font-size: $font-size-banner-cta-xxl;
     }
