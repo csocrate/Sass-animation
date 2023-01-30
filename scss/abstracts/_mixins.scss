@@ -35,3 +35,9 @@
   align-items: $align;
   flex-wrap: $wrap;
 }
+
+@mixin max-width($width, $max-width) {
+  width: $width;
+  max-width: $max-width;
+  margin: 0 auto 
+}

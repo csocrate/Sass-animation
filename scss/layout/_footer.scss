@@ -1,0 +1,16 @@
+.footer-site {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $bg-color-footer;
+
+  > div {
+    @include max-width(90%, 1400px);
+
+    h4 {
+      padding-bottom: 2rem
+    }
+
+    a {
+    }
+  };
+}

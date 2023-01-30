@@ -35,9 +35,7 @@
     &.how-it-works,
     &.cards {
       > div {
-        width: 90%;
-      max-width: 1400px;
-      margin: 0 auto 
+        @include max-width(90%, 1400px);
       };
     }
 

@@ -44,6 +44,14 @@ h3 {
   }
 }
 
+h4 {
+  font-family: $font-family-h4-footer;
+  font-size: $font-size-h4-footer;
+  font-weight: $font-weight-h4-footer;
+  line-height: $line-height-h4-footer;
+  color: $color-h4-footer;
+}
+
 p {
   &.p-banner {
     font-size: $font-size-p-banner;
@@ -69,6 +77,10 @@ a {
   &.a-step {
     font-size: $font-size-a-step;
     font-weight: $font-weight-a-step;
+  }
+
+  &.a-foo {
+    color: $color-a-footer;
   }
 }
 
