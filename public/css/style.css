@@ -31,11 +31,11 @@
   * 
   */
 /**
-  * Banner
+  * Card
   * 
   */
 /**
-  * Cards
+  * Banner
   * 
   */
 /**
@@ -226,6 +226,14 @@ span.nb-step {
   font-size: 0.875em;
   font-weight: 700;
   color: #FFF;
+}
+
+/*
+ * i
+ */
+.card i {
+  font-size: 1.75em;
+  color: #FF79DA;
 }
 
 .banner {
@@ -465,10 +473,6 @@ span.nb-step {
 }
 .card a .card-details__left p {
   padding-bottom: 0.35rem;
-}
-.card a .card-details__right i {
-  font-size: 1.75em;
-  color: #FF79DA;
 }
 .card a .card-img {
   order: 1;

@@ -124,6 +124,22 @@ $color-i-step:                             $primary-color;
 
 $bg-color-step:                            $grey-light;
 
+/**
+  * Card
+  * 
+  */
+  $font-size-h3-card:                   $font-size-normal * 1.2;
+  $font-size-p-card:                    $font-size-normal * 1.1;
+  $font-size-i-card:                    $font-size-normal * 1.75;
+  $line-height-p-card:                  $line-height-normal * 1.15;
+
+  $bg-color-cards:                      $grey-light;
+  $bg-color-card-details:               $white;
+
+  $color-card-a-alt:                    $black;
+  $color-card-i:                        $secondary-color;
+
+
 // --------------------------------------------------
 // LAYOUT
 // --------------------------------------------------
@@ -134,20 +150,6 @@ $bg-color-step:                            $grey-light;
   */
 $bg-color-first-child:                  $grey;
 $bg-color-last-child:                   $grey-light;
-
-/**
-  * Cards
-  * 
-  */
-  $font-size-h3-card:                   $font-size-normal * 1.2;
-  $font-size-p-card:                    $font-size-normal * 1.1;
-  $line-height-p-card:                  $line-height-normal * 1.15;
-
-  $bg-color-cards:                      $grey-light;
-  $bg-color-card-details:               $white;
-
-  $color-card-a-alt:                    $black;
-  $color-card-i:                        $secondary-color;
 
 /**
 * Footer
