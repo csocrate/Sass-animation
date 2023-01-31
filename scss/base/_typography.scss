@@ -38,6 +38,9 @@ h2 {
 }
 
 h3 {
+  &.h3-step {
+    font-weight: $font-weight-h3-step;
+  }
   &.h3-card {
     font-size: $font-size-h3-card;
     text-transform: capitalize;
@@ -50,6 +53,18 @@ h4 {
   font-weight: $font-weight-h4-footer;
   line-height: $line-height-h4-footer;
   color: $color-h4-footer;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h4-footer-md;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: $font-size-h4-footer-xl;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: $font-size-h4-footer-xxl;
+  }
 }
 
 p {
@@ -65,22 +80,46 @@ p {
   }
 }
 
-a {
-  &.banner-cta {
+/*
+ * a
+ */
+
+//== Banner call to action ==
+.banner {
+  a {
     @include cta-button-typo($font-size-banner-cta, $font-weight-banner-cta, $color-banner-cta, $color-banner-cta-alt);
     
     @media (min-width: 1600px) {
       font-size: $font-size-banner-cta-xxl;
     }
   }
+}
+//== Footer links ==
+.foo {
+  a {
+    font-size: $font-size-a-footer;
+    line-height: $line-height-a-footer;
+    color: $color-a-footer;
 
-  &.a-step {
-    font-size: $font-size-a-step;
-    font-weight: $font-weight-a-step;
+    @media (min-width: 768px) {
+      font-size: $font-size-a-footer-md;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: $font-size-a-footer-xl;
+    }
+  }
+  
+  &:first-child {
+    a {
+      font-weight: $font-weight-a-footer;
+    }
   }
 
-  &.a-foo {
-    color: $color-a-footer;
+  &:last-child {
+    a {
+      font-weight: $font-weight-a-last-footer;
+    }
   }
 }
 

@@ -86,7 +86,7 @@
   transition: 0.5s ease;
 }
 .wrapper a:hover {
-  color: #9356DC;
+  color: #FF79DA;
 }
 .wrapper img {
   display: block;
@@ -136,6 +136,9 @@ h2.h2-home {
   }
 }
 
+h3.h3-step {
+  font-weight: 500;
+}
 h3.h3-card {
   font-size: 1.2em;
   text-transform: capitalize;
@@ -148,6 +151,21 @@ h4 {
   line-height: 1.15;
   color: #FFF;
 }
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.15em;
+  }
+}
+@media (min-width: 1400px) {
+  h4 {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 1600px) {
+  h4 {
+    font-size: 1.35em;
+  }
+}
 
 p.p-banner {
   font-size: 1.2em;
@@ -159,27 +177,45 @@ p.p-card {
   line-height: 1.15;
 }
 
-a.banner-cta {
+/*
+ * a
+ */
+.banner a {
   font-size: 1.1em;
   font-weight: 500;
   color: #FFF;
   cursor: pointer;
 }
-a.banner-cta:hover {
+.banner a:hover {
   transform: scale(1.03);
   color: #FFF;
 }
 @media (min-width: 1600px) {
-  a.banner-cta {
+  .banner a {
     font-size: 1.25em;
   }
 }
-a.a-step {
+
+.foo a {
   font-size: 1.1em;
+  line-height: 1.55;
+  color: #f7f7f7;
+}
+@media (min-width: 768px) {
+  .foo a {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1600px) {
+  .foo a {
+    font-size: 1.05em;
+  }
+}
+.foo:first-child a {
   font-weight: 500;
 }
-a.a-foo {
-  color: #f7f7f7;
+.foo:last-child a {
+  font-weight: 400;
 }
 
 span.load {
@@ -294,18 +330,62 @@ span.nb-step {
   }
 }
 
-.footer-site {
+.footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #4d4d4d;
 }
-.footer-site > div {
+@media (min-width: 1400px) {
+  .footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.footer__main {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
 }
-.footer-site > div h4 {
+.footer__main h4 {
   padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__main h4 {
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .footer__main h4 {
+    padding-bottom: 1.25rem;
+  }
+}
+.footer__main > div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer__main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer__main > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.footer__main > div > div a i {
+  margin-right: 0.5rem;
+}
+.footer__main > div > div a:last-child i {
+  font-size: 0.8em;
+  margin-right: 0.375rem;
 }
 .header-site {
   height: 4rem;
@@ -450,7 +530,7 @@ span.nb-step {
 }
 .step div {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   position: relative;
   width: 370px;
   padding-top: 1.85rem;

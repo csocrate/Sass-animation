@@ -14,7 +14,7 @@
   }
 
   div {
-    @include flexbox(null,center,null,null);
+    @include flexbox(null,left,null,null);
     position: relative;
     width: 370px;
     padding-top: 1.85rem;

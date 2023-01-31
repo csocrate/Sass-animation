@@ -15,6 +15,7 @@
   $current-color:                         currentColor;
   $grey:                                  lighten($black, 88%); // #F2F2F2
   $grey-light:                            lighten($black, 97%); // #F7F7F7
+  $main-linear-gradient:                  linear-gradient($secondary-color,$primary-color);
   $transparent:                           transparent;
   $white:                               #FFF;
 
@@ -66,7 +67,7 @@ $line-height-p-banner:                  $line-height-normal * 1.15;
 
 //== a ==
 $color-a:                               $current-color;
-$color-a-alt:                           $primary-color;
+$color-a-alt:                           $secondary-color;
 
 // --------------------------------------------------
 // COMPONENTS
@@ -105,7 +106,7 @@ $font-size-banner-cta-xxl:                $font-size-normal * 1.25;
 $font-weight-banner-cta:                  500;
 $color-banner-cta:                        $white;
 $color-banner-cta-alt:                    $white;
-$bg-color-banner-cta:                     linear-gradient($secondary-color,$primary-color);
+$bg-color-banner-cta:                     $main-linear-gradient;
 
 /**
   * Step how it works
@@ -116,8 +117,7 @@ $font-weight-nb-step:                      700;
 $color-nb-step:                            $white;
 $bg-color-nb-step:                         $primary-color;
 
-$font-size-a-step:                         $font-size-normal * 1.1;
-$font-weight-a-step:                       500;
+$font-weight-h3-step:                      500;
 
 $font-size-i-step:                         $font-size-normal * 1.4;
 $color-i-step:                             $primary-color;
@@ -155,8 +155,18 @@ $bg-color-last-child:                   $grey-light;
 */
 $font-family-h4-footer:               'Shrikhand', cursive;
 $font-size-h4-footer:                 $font-size-normal * 1.25;
+$font-size-h4-footer-md:              $font-size-normal * 1.15;
+$font-size-h4-footer-xl:              $font-size-normal * 1.25;
+$font-size-h4-footer-xxl:             $font-size-normal * 1.35;
+$font-size-a-footer:                  $font-size-normal * 1.1;
+$font-size-a-footer-md:               $font-size-normal;
+$font-size-a-footer-xl:               $font-size-normal * 1.05;
+$font-size-i-footer:                  $font-size-normal * .8;
 $font-weight-h4-footer:               500;
 $line-height-h4-footer:               $line-height-normal * 1.15;
+$font-weight-a-footer:                500;
+$font-weight-a-last-footer:           400;
+$line-height-a-footer:                $line-height-normal * 1.55;
 
 $color-h4-footer:                     $white;
 $color-a-footer:                      $grey-light;
