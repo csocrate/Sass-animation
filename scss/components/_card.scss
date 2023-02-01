@@ -42,9 +42,34 @@
           padding-bottom: 0.35rem;
         }
       }
+
+      &__right {       
+    
+        // Test
+        i {
+          -webkit-text-stroke-width: .01px;
+          -webkit-text-fill-color: $black-light;
+          font-weight: unset;
+
+          &:hover,
+          &:active {
+            animation: liked 1000ms forwards;
+  
+            @keyframes liked {
+              to {
+                font-weight: 900;
+                transform-origin: bottom right;
+                background: -webkit-linear-gradient(#ff79da, #9356dc);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+      }
     }
 
-    .card-img{
+    .card-img {
       order: 1;
 
       &,
