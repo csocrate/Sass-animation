@@ -1,19 +1,42 @@
 .header-site {
-  height: 4rem;
-  @include flexbox(null,center,center,null);
-  padding: 2rem 0;
+  width: 100%;
 
-  @media (min-width: 1400px ) {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+  > div {
+    @include flexbox(null,center,center,null);
+    position: relative;
+    @include max-width(82%, 1400px);
+    height: 4rem;
+    margin-top: .5rem;
+    padding: 2rem 0;
+
+    @media (min-width: 1400px ) {
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem;
+    }
+  
+    @media (min-width: 1600px ) {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    a {
+      display: inline-block;
+    }
   }
 
-  @media (min-width: 1600px ) {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  &--menu-page {
+    a {
+      order: 1;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    picture {
+      order: 2;
+    }
   }
 
-  a {
-    display: inline-block;
-  }
+
 }

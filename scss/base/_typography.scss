@@ -140,10 +140,14 @@ span {
  * i
  */
 
-//== Card icon ==
+//== Icon ==
 .card {
   i {
     font-size: $font-size-i-card;
-    color: $color-card-i;
+  }
+}
+.header-site {
+  i  {
+    font-size: $font-size-i-header;
   }
 }

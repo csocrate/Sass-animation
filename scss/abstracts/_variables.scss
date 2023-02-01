@@ -16,6 +16,7 @@
   $grey:                                  lighten($black, 88%); // #F2F2F2
   $grey-light:                            lighten($black, 97%); // #F7F7F7
   $main-linear-gradient:                  linear-gradient($secondary-color,$primary-color);
+  $main-linear-gradient-right:            linear-gradient(to right,$secondary-color 10%,$primary-color 90%);
   $transparent:                           transparent;
   $white:                               #FFF;
 
@@ -137,12 +138,17 @@ $bg-color-step:                            $grey-light;
   $bg-color-card-details:               $white;
 
   $color-card-a-alt:                    $black;
-  $color-card-i:                        $secondary-color;
+  $color-card-i:                        $black-light;
 
 
 // --------------------------------------------------
 // LAYOUT
 // --------------------------------------------------
+/**
+  * Header
+  * 
+  */
+$font-size-i-header:                    $font-size-normal * 1.55;
 
 /**
   * Banner
