@@ -49,11 +49,14 @@ $bg-color-body:                         $white;
   * 
   */
 //== h1 ==
-$font-size-h1-home:                     $font-size-normal * 1.75;
-$font-size-h1-home-md:                  $font-size-normal * 1.65;
-$font-size-h1-home-xl:                  $font-size-normal * 1.85;
-$font-size-h1-home-xxl:                  $font-size-normal * 2.05;
-$line-height-h1-home:                   $line-height-normal * 1.2;
+$font-size-h1-page:                     $font-size-normal * 1.75;
+$font-size-h1-page-md:                  $font-size-normal * 1.65;
+$font-size-h1-page-xl:                  $font-size-normal * 1.85;
+$font-size-h1-page-xxl:                  $font-size-normal * 2.05;
+$line-height-h1-page:                   $line-height-normal * 1.2;
+
+$font-family-h1-single:                 'Shrikhand', cursive;
+$font-weight-h1-single:                 500;
 
 //== h2 ==
 $font-size-h2-home:                     $font-size-normal * 1.75;
@@ -140,6 +143,12 @@ $bg-color-step:                            $grey-light;
   $color-card-a-alt:                    $black;
   $color-card-i:                        $black-light;
 
+/**
+  * Icon banner from single page
+  * 
+  */
+
+  $font-size-i-card-single-page:        $font-size-normal * 1.5;
 
 // --------------------------------------------------
 // LAYOUT

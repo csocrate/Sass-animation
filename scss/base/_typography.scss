@@ -1,19 +1,24 @@
 h1 {
-  &.h1-home {
-    font-size: $font-size-h1-home;
-    line-height: $line-height-h1-home;
+  &.h1-page {
+    font-size: $font-size-h1-page;
+    line-height: $line-height-h1-page;
     text-align: center;
 
     @media (min-width: 768px) {
-      font-size: $font-size-h1-home-md;
+      font-size: $font-size-h1-page-md;
     }
 
     @media (min-width: 1400px) {
-      font-size: $font-size-h1-home-xl;
+      font-size: $font-size-h1-page-xl;
     }
 
     @media (min-width: 1600px) {
-      font-size: $font-size-h1-home-xxl;
+      font-size: $font-size-h1-page-xxl;
+    }
+
+    &--single {
+      font-family: $font-family-h1-single;
+      font-weight: $font-weight-h1-single;
     }
   }
 }
@@ -22,6 +27,7 @@ h2 {
   &.h2-home {
     font-size: $font-size-h2-home;
     line-height: $line-height-h2-home;
+    padding-bottom: 1rem;
 
     @media (min-width: 768px) {
       font-size: $font-size-h2-home-md;
@@ -149,5 +155,12 @@ span {
 .header-site {
   i  {
     font-size: $font-size-i-header;
+  }
+}
+.wrapper--single-page {
+  .banner {
+    i {
+      font-size:  $font-size-i-card-single-page;
+    }
   }
 }
