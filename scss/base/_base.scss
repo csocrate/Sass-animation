@@ -33,7 +33,8 @@
 
   section:not(.banner) {
     &.how-it-works,
-    &.cards {
+    &.cards,
+    &.menu-maker {
       > div {
         @include max-width(90%, 1400px);
       };

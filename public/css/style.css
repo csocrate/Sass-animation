@@ -80,7 +80,7 @@
     margin-bottom: 2.25rem;
   }
 }
-.wrapper section:not(.banner).how-it-works > div, .wrapper section:not(.banner).cards > div {
+.wrapper section:not(.banner).how-it-works > div, .wrapper section:not(.banner).cards > div, .wrapper section:not(.banner).menu-maker > div {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
@@ -147,6 +147,12 @@ h2.h2-home {
   h2.h2-home {
     font-size: 1.875em;
   }
+}
+h2.h2-single {
+  font-size: 1.25em;
+  text-transform: "uppercase";
+  font-weight: 400;
+  color: #4d4d4d;
 }
 
 h3.h3-step {
@@ -369,27 +375,31 @@ span.nb-step {
   align-items: flex-end;
   padding: 0;
   background-color: transparent;
-  z-index: 2;
 }
-.wrapper--single-page .banner > div div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.wrapper--single-page .banner > div > div {
   width: 100%;
+  background-color: #f7f7f7;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding-top: 1.5rem;
-  background-color: #f7f7f7;
 }
 @media (min-width: 768px) {
-  .wrapper--single-page .banner > div div {
+  .wrapper--single-page .banner > div > div {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
   }
 }
-.wrapper--single-page .banner > div div i {
-  margin-right: 0.5rem;
+.wrapper--single-page .banner > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrapper--single-page .banner > div > div > div i {
+  margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
 .wrapper--single-page .banner img {
@@ -607,6 +617,61 @@ span.nb-step {
   .card a .card-img img {
     height: 350px;
     max-height: 350px;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  animation: bg_visibility 0.7s 2s forwards;
+  visibility: visible;
+}
+@keyframes bg_visibility {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loading span {
+  display: inline-block;
+  position: fixed;
+}
+.loading > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+}
+.loading > div::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: #FF79DA;
+  border-left-color: #99E2D0;
+  border-right-color: #9356DC;
+  border-bottom-color: #9356DC;
+  border-radius: 50%;
+  padding: 1rem;
+  animation: loading 0.7s infinite linear;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
   }
 }
 

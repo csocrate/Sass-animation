@@ -41,6 +41,13 @@ h2 {
       font-size: $font-size-h2-home-xxl;
     }
   }
+
+  &.h2-single {
+    font-size: $font-size-h2-single;
+    text-transform: $txt-transform-h2-single;
+    font-weight: $font-weight-h2-single;
+    color: $color-h2-single;
+  }
 }
 
 h3 {

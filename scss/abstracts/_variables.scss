@@ -62,8 +62,13 @@ $font-weight-h1-single:                 500;
 $font-size-h2-home:                     $font-size-normal * 1.75;
 $font-size-h2-home-md:                  $font-size-normal * 1.65;
 $font-size-h2-home-xl:                  $font-size-normal * 1.75;
-$font-size-h2-home-xxl:                  $font-size-normal * 1.875;
+$font-size-h2-home-xxl:                 $font-size-normal * 1.875;
 $line-height-h2-home:                   $line-height-normal * 1.2;
+
+$font-size-h2-single:                   $font-size-normal * 1.25;
+$font-weight-h2-single:                 400;
+$txt-transform-h2-single:               'uppercase';
+$color-h2-single:                       $black-light;
 
 //== p ==
 $font-size-p-banner:                    $font-size-normal * 1.2;
