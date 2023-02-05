@@ -31,8 +31,6 @@
 
   $line-height-normal:                   1;
 
-  $inherit:                              'inherit';
-
 /**
   * .body
   * 
@@ -41,19 +39,29 @@ $font-size-body:                        $font-size-init;
 $font-style-body:                       normal;
 $font-weight-body:                      300;
 $line-height-body:                      19px;
-$color-body:                            $black;
+$color-body:                            $black-light;
 $bg-color-body:                         $white;
 
 /**
   * Other bases
   * 
   */
+
+//== Levels of section headings ==
+$color-h1-h2-h3:                        $black;
+
 //== h1 ==
 $font-size-h1-page:                     $font-size-normal * 1.75;
 $font-size-h1-page-md:                  $font-size-normal * 1.65;
 $font-size-h1-page-xl:                  $font-size-normal * 1.85;
-$font-size-h1-page-xxl:                  $font-size-normal * 2.05;
+$font-size-h1-page-xxl:                 $font-size-normal * 2.05;
 $line-height-h1-page:                   $line-height-normal * 1.2;
+$font-weight-h1-page:                   500;
+
+$font-size-h1-single:                   $font-size-normal * 1.98;
+$font-size-h1-single-md:                $font-size-normal * 1.7;
+$font-size-h1-single-xl:                $font-size-normal * 2;
+$font-size-h1-single-xxl:               $font-size-normal * 2.2;
 
 $font-family-h1-single:                 'Shrikhand', cursive;
 $font-weight-h1-single:                 500;
@@ -65,14 +73,31 @@ $font-size-h2-home-xl:                  $font-size-normal * 1.75;
 $font-size-h2-home-xxl:                 $font-size-normal * 1.875;
 $line-height-h2-home:                   $line-height-normal * 1.2;
 
-$font-size-h2-single:                   $font-size-normal * 1.25;
+$font-size-h2-single:                   $font-size-normal * 1.125;
+$font-size-h2-single-md:                $font-size-normal * 1.15;
+$font-size-h2-single-xl:                $font-size-normal * 1.25;
+$font-size-h2-single-xxl:               $font-size-normal * 1.35;
+$line-height-h2-single:                 $line-height-normal * 1.75;
 $font-weight-h2-single:                 400;
-$txt-transform-h2-single:               'uppercase';
+$txt-transform-h2-single:               uppercase;
 $color-h2-single:                       $black-light;
+
+//== h3 ==
+$font-size-h3-single:                   $font-size-normal * 1.22;
+$font-size-h3-single-md:                $font-size-normal * .975;
+$font-size-h3-single-lg:                $font-size-normal;
+$font-size-h3-single-xl:                $font-size-normal * 1.25;
+$line-height-h3-single:                 $line-height-normal * 1.15;
 
 //== p ==
 $font-size-p-banner:                    $font-size-normal * 1.2;
 $line-height-p-banner:                  $line-height-normal * 1.15;
+$font-size-p-product-md:                $font-size-normal * .975;
+$font-size-p-product-lg:                $font-size-normal * 1.05;
+$font-size-p-product-xl:                $font-size-normal * 1.1;
+$line-height-p-product:                 $line-height-normal * 1.15;
+$font-weight-p:                         400;
+
 
 //== a ==
 $color-a:                               $current-color;
@@ -155,6 +180,12 @@ $bg-color-step:                            $grey-light;
 
   $font-size-i-card-single-page:        $font-size-normal * 1.5;
 
+/**
+  * Product checkbox
+  * 
+  */
+  $bg-color-product-checkbox:           $white;
+
 // --------------------------------------------------
 // LAYOUT
 // --------------------------------------------------
@@ -170,6 +201,14 @@ $font-size-i-header:                    $font-size-normal * 1.55;
   */
 $bg-color-first-child:                  $grey;
 $bg-color-last-child:                   $grey-light;
+$bg-color-banner-single-page:           $black-light;
+
+/**
+  * Menu maker section
+  * 
+  */
+  $bg-color-menu-maker:                 $white;
+  $bg-color-menu-maker-first-div:       $grey-light;
 
 /**
 * Footer

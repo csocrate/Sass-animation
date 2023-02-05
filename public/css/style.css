@@ -39,11 +39,19 @@
   * 
   */
 /**
+  * Product checkbox
+  * 
+  */
+/**
   * Header
   * 
   */
 /**
   * Banner
+  * 
+  */
+/**
+  * Menu maker section
   * 
   */
 /**
@@ -67,25 +75,32 @@
   font-weight: 300;
   font-style: normal;
   background-color: #FFF;
-  color: #000;
+  color: #4d4d4d;
 }
 
-.wrapper--home h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.25rem;
+.wrapper h2 {
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .wrapper h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
 }
 @media (min-width: 1600px) {
-  .wrapper--home h2 {
+  .wrapper h2 {
     margin-top: 2.5rem;
     margin-bottom: 2.25rem;
   }
 }
-.wrapper section:not(.banner).how-it-works > div, .wrapper section:not(.banner).cards > div, .wrapper section:not(.banner).menu-maker > div {
+.wrapper .how-it-works > div,
+.wrapper .cards > div {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
 }
-.wrapper section:not(.banner) > div {
+.wrapper .how-it-works,
+.wrapper .cards {
   padding: 3rem 0 4.25rem;
 }
 .wrapper a {
@@ -103,9 +118,16 @@
   object-fit: cover;
 }
 
+h1,
+h2,
+h3 {
+  color: #000;
+}
+
 h1.h1-page {
   font-size: 1.75em;
   line-height: 1.2;
+  font-weight: 500;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -125,13 +147,28 @@ h1.h1-page {
 }
 h1.h1-page--single {
   font-family: "Shrikhand", cursive;
+  font-size: 1.98em;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  h1.h1-page--single {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 1400px) {
+  h1.h1-page--single {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1600px) {
+  h1.h1-page--single {
+    font-size: 2.2em;
+  }
 }
 
 h2.h2-home {
   font-size: 1.75em;
   line-height: 1.2;
-  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   h2.h2-home {
@@ -149,10 +186,26 @@ h2.h2-home {
   }
 }
 h2.h2-single {
-  font-size: 1.25em;
-  text-transform: "uppercase";
+  font-size: 1.125em;
   font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.75;
   color: #4d4d4d;
+}
+@media (min-width: 768px) {
+  h2.h2-single {
+    font-size: 1.15em;
+  }
+}
+@media (min-width: 1400px) {
+  h2.h2-single {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 1600px) {
+  h2.h2-single {
+    font-size: 1.35em;
+  }
 }
 
 h3.h3-step {
@@ -161,6 +214,25 @@ h3.h3-step {
 h3.h3-card {
   font-size: 1.2em;
   text-transform: capitalize;
+}
+h3.h3-product {
+  font-size: 1.22em;
+  line-height: 1.15;
+}
+@media (min-width: 768px) {
+  h3.h3-product {
+    font-size: 0.975em;
+  }
+}
+@media (min-width: 1024px) {
+  h3.h3-product {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1400px) {
+  h3.h3-product {
+    font-size: 1.25em;
+  }
 }
 
 h4 {
@@ -186,6 +258,9 @@ h4 {
   }
 }
 
+p {
+  font-weight: 400;
+}
 p.p-banner {
   font-size: 1.2em;
   line-height: 1.15;
@@ -194,6 +269,24 @@ p.p-banner {
 p.p-card {
   font-size: 1.1em;
   line-height: 1.15;
+}
+p.p-product {
+  line-height: 1.15;
+}
+@media (min-width: 768px) {
+  p.p-product {
+    font-size: 0.975em;
+  }
+}
+@media (min-width: 1024px) {
+  p.p-product {
+    font-size: 1.05em;
+  }
+}
+@media (min-width: 1400px) {
+  p.p-product {
+    font-size: 1.1em;
+  }
 }
 
 /*
@@ -246,6 +339,9 @@ span.nb-step {
   font-weight: 700;
   color: #FFF;
 }
+span.product-price {
+  font-weight: 900;
+}
 
 /*
  * i
@@ -283,7 +379,7 @@ span.nb-step {
   max-width: 450px;
   margin: 0 auto;
   height: 350px;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   /* Call to action */
 }
 @media (min-width: 768px) {
@@ -305,15 +401,25 @@ span.nb-step {
 .banner > div:last-child div p {
   margin-bottom: 1.15rem;
 }
+.banner > div:last-child div h1 {
+  max-width: 300px;
+}
 @media (min-width: 768px) {
   .banner > div:last-child div h1 {
-    max-width: 300px;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .banner > div:last-child div h1 {
     max-width: inherit;
+  }
+}
+.banner > div:last-child div p {
+  max-width: 400px;
+}
+@media (min-width: 1600px) {
+  .banner > div:last-child div p {
+    max-width: 600px;
   }
 }
 .banner > div:last-child div a {
@@ -343,6 +449,7 @@ span.nb-step {
 .wrapper--single-page .banner {
   position: relative;
   height: 44vh;
+  background-color: #4d4d4d;
 }
 @media (min-width: 768px) {
   .wrapper--single-page .banner {
@@ -381,7 +488,7 @@ span.nb-step {
   background-color: #f7f7f7;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  padding-top: 1.5rem;
+  padding-top: 2.1rem;
 }
 @media (min-width: 768px) {
   .wrapper--single-page .banner > div > div {
@@ -488,6 +595,7 @@ span.nb-step {
   font-size: 0.8em;
   margin-right: 0.375rem;
 }
+
 .header-site {
   width: 100%;
 }
@@ -532,6 +640,45 @@ span.nb-step {
 .how-it-works > div {
   display: flex;
   flex-direction: column;
+}
+
+.menu-maker {
+  background-color: #FFF;
+}
+@media (min-width: 768px) {
+  .menu-maker {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+.menu-maker > div {
+  background-color: #f7f7f7;
+}
+.menu-maker > div .products {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.menu-maker > div .products h2::after {
+  display: block;
+  content: "";
+  width: 2.75rem;
+  border: 2px solid #99E2D0;
+}
+.menu-maker > div .products > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+@media (min-width: 991px) {
+  .menu-maker > div .products > div {
+    gap: 1.5rem;
+  }
 }
 
 .wrapper {
@@ -673,6 +820,43 @@ span.nb-step {
   100% {
     transform: rotate(1turn);
   }
+}
+
+.product-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: #d9d9d9 0 5px 12px;
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #FFF;
+}
+@media (min-width: 768px) {
+  .product-checkbox {
+    width: 48%;
+  }
+}
+@media (min-width: 140px) {
+  .product-checkbox {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+.product-checkbox__left {
+  width: 100%;
+}
+.product-checkbox__left p {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+.product-checkbox__right input[value=option1],
+.product-checkbox__right input[value=option2] {
+  display: none;
 }
 
 .search-form i {

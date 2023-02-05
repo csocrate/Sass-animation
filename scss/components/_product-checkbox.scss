@@ -1,0 +1,37 @@
+.product-checkbox {
+  @include flexbox(null, space-between, center, null);
+  border-radius: 15px;
+  width: 100%;
+  @include box-shadow;
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: $bg-color-product-checkbox;
+
+  @media (min-width: 768px) {
+    width: 48%;
+  }
+
+  @media (min-width: 140px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__left {
+    width: 100%;
+
+    p {
+      @include flexbox(null, space-between, null, null);
+      padding-top: .5rem;
+    }
+  }
+  
+  &__right {
+    input[value="option1"],    
+    input[value="option2"] {
+      display: none;
+    }
+  }
+  
+}

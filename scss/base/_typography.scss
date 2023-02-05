@@ -1,7 +1,14 @@
+h1,
+h2,
+h3 {
+  color: $color-h1-h2-h3;
+}
+
 h1 {
   &.h1-page {
     font-size: $font-size-h1-page;
     line-height: $line-height-h1-page;
+    font-weight: $font-weight-h1-page;
     text-align: center;
 
     @media (min-width: 768px) {
@@ -18,7 +25,20 @@ h1 {
 
     &--single {
       font-family: $font-family-h1-single;
+      font-size: $font-size-h1-single;
       font-weight: $font-weight-h1-single;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-h1-single-md;
+      }
+  
+      @media (min-width: 1400px) {
+        font-size: $font-size-h1-single-xl;
+      }
+  
+      @media (min-width: 1600px) {
+        font-size: $font-size-h1-single-xxl;
+      }
     }
   }
 }
@@ -27,7 +47,6 @@ h2 {
   &.h2-home {
     font-size: $font-size-h2-home;
     line-height: $line-height-h2-home;
-    padding-bottom: 1rem;
 
     @media (min-width: 768px) {
       font-size: $font-size-h2-home-md;
@@ -44,9 +63,22 @@ h2 {
 
   &.h2-single {
     font-size: $font-size-h2-single;
-    text-transform: $txt-transform-h2-single;
     font-weight: $font-weight-h2-single;
+    text-transform: $txt-transform-h2-single;
+    line-height: $line-height-h2-single;
     color: $color-h2-single;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-h2-single-md;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-h2-single-xl;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: $font-size-h2-single-xxl;
+    }
   }
 }
 
@@ -54,9 +86,27 @@ h3 {
   &.h3-step {
     font-weight: $font-weight-h3-step;
   }
+
   &.h3-card {
     font-size: $font-size-h3-card;
     text-transform: capitalize;
+  }
+
+  &.h3-product {
+    font-size: $font-size-h3-single;
+    line-height: $line-height-h3-single;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-h3-single-md;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: $font-size-h3-single-lg;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-h3-single-xl;
+    }
   }
 }
 
@@ -81,6 +131,8 @@ h4 {
 }
 
 p {
+  font-weight: $font-weight-p;
+
   &.p-banner {
     font-size: $font-size-p-banner;
     line-height: $line-height-p-banner;
@@ -90,6 +142,22 @@ p {
   &.p-card {
     font-size: $font-size-p-card;
     line-height: $line-height-p-card;
+  }
+
+  &.p-product {
+    line-height: $line-height-p-product;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-p-product-md;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: $font-size-p-product-lg;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-p-product-xl;
+    }
   }
 }
 
@@ -146,6 +214,10 @@ span {
     font-size: $font-size-nb-step;
     font-weight: $font-weight-nb-step;
     color: $color-nb-step;
+  }
+
+  &.product-price {
+    font-weight: 900;
   }
 }
 

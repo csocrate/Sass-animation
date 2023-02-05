@@ -1,0 +1,38 @@
+.menu-maker {
+  background-color: $bg-color-menu-maker;
+
+  @media (min-width: 768px) {
+    @include max-width(90%, 1400px);
+  }
+
+  > div {
+    background-color: $bg-color-menu-maker-first-div;
+
+    .products {
+      @include max-width(90%, 1000px);
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      h2 {
+        &::after {
+          display: block;
+          content: "";
+          width: 2.75rem;
+          border: 2px solid $tertiary-color;
+        }
+      }
+
+      > div {
+        @include flexbox(null, center, center, wrap);
+        gap: 1.25rem;
+
+        @media (min-width: 991px) {
+          gap: 1.5rem;
+        }
+      }  
+
+
+
+    }
+  }
+}
