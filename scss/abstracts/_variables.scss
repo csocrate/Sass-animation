@@ -164,15 +164,17 @@ $bg-color-step:                            $grey-light;
   */
   $font-size-h3-card:                   $font-size-normal * 1.2;
   $font-size-p-card:                    $font-size-normal * 1.1;
-  $font-size-i-card:                    $font-size-normal * 1.75;
-  $line-height-p-card:                  $line-height-normal * 1.15;
+  $font-size-i-card:                    $font-size-normal * 1.5;
 
-  $bg-color-cards:                      $grey-light;
-  $bg-color-card-details:               $white;
+  $line-height-p-card:                  $line-height-normal * 1.15;
 
   $color-card-a-alt:                    $black;
   $color-card-i:                        $black-light;
 
+  $bg-color-card-details:               $white;
+  $bg-color-card-i:                     $main-linear-gradient;
+  $bg-color-cards:                      $grey-light;
+  
 /**
   * Icon banner from single page
   * 
