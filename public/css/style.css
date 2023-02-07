@@ -899,7 +899,7 @@ span.product-price {
   }
 }
 
-.product-checkbox {
+.product-proposal {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -910,37 +910,37 @@ span.product-price {
   background-color: #FFF;
 }
 @media (min-width: 1024px) {
-  .product-checkbox {
+  .product-proposal {
     height: 5.5rem;
   }
 }
 @media (min-width: 1400px) {
-  .product-checkbox {
+  .product-proposal {
     height: 6rem;
   }
 }
 @media (min-width: 1400px) {
-  .product-checkbox {
+  .product-proposal {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
-.product-checkbox__left {
+.product-proposal__left {
   width: 100%;
   padding-top: 1.15rem;
   padding-bottom: 1.15rem;
   padding-left: 1rem;
 }
-.product-checkbox__left p {
+.product-proposal__left p {
   display: flex;
   justify-content: space-between;
   padding-top: 0.5rem;
 }
-.product-checkbox__left p span {
+.product-proposal__left p span {
   position: absolute;
   right: 25px;
 }
-.product-checkbox__right {
+.product-proposal__right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -956,7 +956,7 @@ span.product-price {
   background-color: #99E2D0;
   transform: translateX(-8888px);
 }
-.product-checkbox__right input {
+.product-proposal__right input {
   width: 1.5rem;
   height: 1.5rem;
   appearance: none;
@@ -965,7 +965,7 @@ span.product-price {
   color: white;
   background-color: white;
 }
-.product-checkbox__right i {
+.product-proposal__right i {
   position: absolute;
   color: #99E2D0;
 }

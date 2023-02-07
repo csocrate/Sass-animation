@@ -1,10 +1,10 @@
-.product-checkbox {
+.product-proposal {
   @include flexbox(null, space-between, center, null);
   border-radius: 15px;
   height: 5rem;
   @include box-shadow;
   position: relative;
-  background-color: $bg-color-product-checkbox;
+  background-color: $bg-color-product-proposal;
 
   @media (min-width: 1024px) {
     height: 5.5rem;
@@ -47,7 +47,7 @@
     border-bottom-right-radius: 15px;
     position: absolute;
     right: 0;
-    background-color: $bg-color-product-checkbox-right;
+    background-color: $bg-color-product-proposal-right;
     transform: translateX(-8888px);
 
     input {
