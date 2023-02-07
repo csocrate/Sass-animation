@@ -139,22 +139,6 @@ p {
     font-size: $font-size-p-card;
     line-height: $line-height-p-card;
   }
-
-  &.p-product {
-    line-height: $line-height-p-product;
-
-    @media (min-width: 768px) {
-      font-size: $font-size-p-product-md;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: $font-size-p-product-lg;
-    }
-
-    @media (min-width: 1400px) {
-      font-size: $font-size-p-product-xl;
-    }
-  }
 }
 
 /*
@@ -214,6 +198,22 @@ span {
     font-size: $font-size-nb-step;
     font-weight: $font-weight-nb-step;
     color: $color-nb-step;
+  }
+
+  &.product-detail {
+    line-height: $line-height-product-detail;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-product-detail-md;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: $font-size-product-detail-lg;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-product-detail-xl;
+    }
   }
 
   &.product-price {

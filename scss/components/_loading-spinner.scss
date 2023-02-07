@@ -40,16 +40,8 @@
       border-bottom-color: $loading-border-bottom-color;
       border-radius: 50%;
       padding: 1rem;
-      animation: loading .7s infinite linear;
-  
-      @keyframes loading {
-        0% {
-          transform: rotate(0turn);
-        }
-        100% {
-          transform: rotate(1turn);
-        }
-      }
+      animation: rotate_keyframes .7s infinite linear;
+      @include rotate_keyframes;
     }
   }
 }
