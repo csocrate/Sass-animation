@@ -84,9 +84,9 @@ $color-h2-single:                       $black-light;
 
 //== h3 ==
 $font-size-h3-single:                   $font-size-normal * 1.22;
-$font-size-h3-single-md:                $font-size-normal * .975;
-$font-size-h3-single-lg:                $font-size-normal;
-$font-size-h3-single-xl:                $font-size-normal * 1.25;
+$font-size-h3-single-md:                $font-size-normal * 1.15;
+$font-size-h3-single-lg:                $font-size-normal * 1.2;
+$font-size-h3-single-xl:                $font-size-normal * 1.25;// Not used
 $line-height-h3-single:                 $line-height-normal * 1.15;
 
 //== p ==
@@ -180,6 +180,7 @@ $bg-color-step:                            $grey-light;
   * 
   */
   $bg-color-product-checkbox:           $white;
+  $bg-color-product-checkbox-right:     $tertiary-color;
 
 // --------------------------------------------------
 // LAYOUT
