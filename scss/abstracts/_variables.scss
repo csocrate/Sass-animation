@@ -174,13 +174,6 @@ $bg-color-step:                            $grey-light;
   $bg-color-card-details:               $white;
   $bg-color-card-i:                     $main-linear-gradient;
   $bg-color-cards:                      $grey-light;
-  
-/**
-  * Icon banner from single page
-  * 
-  */
-
-  $font-size-i-card-single-page:        $font-size-normal * 1.5;
 
 /**
   * Product checkbox
@@ -201,6 +194,8 @@ $font-size-i-header:                    $font-size-normal * 1.55;
   * Banner
   * 
   */
+$font-size-i-banner-single:             $font-size-normal * 1.75;
+
 $bg-color-first-child:                  $grey;
 $bg-color-last-child:                   $grey-light;
 $bg-color-banner-single-page:           $black-light;

@@ -41,3 +41,54 @@
   max-width: $max-width;
   margin: 0 auto 
 }
+
+@mixin animated-heart($color:$color-card-i, $bg-color:$bg-color-card-i) {
+  i {
+    &.fa-regular {
+      position: relative;
+      background: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $color;
+      font-weight: unset;
+      cursor: pointer;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: "\f004";
+        font-weight: 900;
+        background: $bg-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 0%;
+      }
+
+      &:hover,
+      &:active {
+        &::after {
+          animation: liked 500ms forwards;
+
+          @keyframes liked {
+            0% {  
+              width: 5%;
+            }
+            25% {          
+              width: 25%;
+            }
+            50% {          
+              width: 50%;
+            }
+            75% {          
+              width: 75%;
+            }
+            100% {          
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

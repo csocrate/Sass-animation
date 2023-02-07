@@ -35,10 +35,6 @@
   * 
   */
 /**
-  * Icon banner from single page
-  * 
-  */
-/**
   * Product checkbox
   * 
   */
@@ -355,7 +351,7 @@ span.product-price {
 }
 
 .wrapper--single-page .banner i {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 .banner {
@@ -497,7 +493,7 @@ span.product-price {
     margin: 0 auto;
   }
 }
-.wrapper--single-page .banner > div > div > div {
+.wrapper--single-page .banner > div > div .banner-single {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -505,9 +501,48 @@ span.product-price {
   max-width: 1400px;
   margin: 0 auto;
 }
-.wrapper--single-page .banner > div > div > div i {
+.wrapper--single-page .banner > div > div .banner-single > div {
   margin-right: 1rem;
-  margin-bottom: 0.5rem;
+}
+.wrapper--single-page .banner > div > div .banner-single > div i.fa-regular {
+  position: relative;
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #4d4d4d;
+  font-weight: unset;
+  cursor: pointer;
+}
+.wrapper--single-page .banner > div > div .banner-single > div i.fa-regular::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  content: "\f004";
+  font-weight: 900;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 0%;
+}
+.wrapper--single-page .banner > div > div .banner-single > div i.fa-regular:hover::after, .wrapper--single-page .banner > div > div .banner-single > div i.fa-regular:active::after {
+  animation: liked 500ms forwards;
+}
+@keyframes liked {
+  0% {
+    width: 5%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .wrapper--single-page .banner img {
   width: 100%;
@@ -740,15 +775,13 @@ span.product-price {
   margin-right: 1rem;
   margin-bottom: 0.75rem;
 }
-.card a .card-details__right i {
-  -webkit-text-stroke-width: 0.01px;
-}
 .card a .card-details__right i.fa-regular {
   position: relative;
   background: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #4d4d4d;
   font-weight: unset;
+  cursor: pointer;
 }
 .card a .card-details__right i.fa-regular::after {
   position: absolute;

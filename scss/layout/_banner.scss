@@ -120,13 +120,13 @@
           @include max-width(90%, 1400px);        
         }
         
-        > div {        
+        .banner-single {        
           @include flexbox(null, space-between, center, null);
           @include max-width(90%, 1400px);
-          
-          i {
+
+          & > div {
             margin-right: 1rem;
-            margin-bottom: .5rem;
+            @include animated-heart;
           }
         }
       }
