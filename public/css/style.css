@@ -695,8 +695,24 @@ span.product-price {
 .menu-maker > div .products h2::after {
   display: block;
   content: "";
-  width: 2.75rem;
-  border: 2px solid #99E2D0;
+  width: 2.85rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+}
+@media (min-width: 768px) {
+  .menu-maker > div .products h2::after {
+    width: 2.95rem;
+  }
+}
+@media (min-width: 1400px) {
+  .menu-maker > div .products h2::after {
+    width: 3.15rem;
+  }
+}
+@media (min-width: 1600px) {
+  .menu-maker > div .products h2::after {
+    width: 3.35rem;
+  }
 }
 .menu-maker > div .products > div {
   display: flex;

@@ -17,8 +17,21 @@
         &::after {
           display: block;
           content: "";
-          width: 2.75rem;
-          border: 2px solid $tertiary-color;
+          width: 2.85rem;
+          height: .25rem;
+          background-color: $tertiary-color;
+
+          @media (min-width: 768px) {
+            width: 2.95rem;
+          }
+      
+          @media (min-width: 1400px) {
+            width: 3.15rem;
+          }
+      
+          @media (min-width: 1600px) {
+            width: 3.35rem;
+          }
         }
       }
 
