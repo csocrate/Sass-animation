@@ -41,6 +41,39 @@
           @media (min-width: 991px) {
             width: 48%;
           }
+
+          &:hover,
+          &:active {   
+        
+           .product-proposal__right {
+              transform: translate(0);
+        
+              & > i {
+                animation: rotate_keyframes 500ms 800ms;
+                @include rotate_keyframes;
+              }
+            }        
+        
+            .product-proposal__left {
+        
+              div {
+                .product-price {
+                  animation: moving_price 400ms 800ms forwards;
+          
+                  @keyframes moving_price {
+                    0% {
+                      padding-right: 0;
+                      transform: translateX(0);
+                    }
+                    100% {
+                      padding-right: .85rem;
+                      transform: translateX(-43px);
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }  
     }

@@ -20,49 +20,39 @@
     padding-bottom: 1.5rem;
   }
 
-  &:hover {   
+  // &:hover,
+  // &:active {   
 
-    & > .product-proposal__right {
-      animation: selected_product 1s forwards; 
+  //   & > .product-proposal__right {
+  //     transform: translate(0);
 
-      @keyframes selected_product {
-        0% {
-          visibility: hidden;
-          transform: translateX(8888px);
-        }
-        100% {
-          visibility: visible;
-          transform: translateX(0);
-        }
-      }
-
-      & > i {
-        animation: rotate_keyframes .5s 1s;
-        @include rotate_keyframes;
-      }
-    }
+  //     & > i {
+  //       animation: rotate_keyframes 500ms 800ms;
+  //       @include rotate_keyframes;
+  //     }
+  //   }
 
 
-    & > .product-proposal__left {
+  //   & > .product-proposal__left {
 
-      div {
-        .product-price {
-          animation: moving_price .5s 1s forwards;
+  //     div {
+  //       .product-price {
+  //         animation: moving_price 400ms 800ms forwards;
   
-          @keyframes moving_price {
-            0% {
-              padding-right: 0;
-              transform: translateX(0);
-            }
-            100% {
-              padding-right: .85rem;
-              transform: translateX(-43px);
-            }
-          }
-        }
-      }
-    }
-  }
+  //         @keyframes moving_price {
+  //           0% {
+  //             padding-right: 0;
+  //             transform: translateX(0);
+  //           }
+  //           100% {
+  //             padding-right: .85rem;
+  //             transform: translateX(-43px);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   &__left {
     width: 100%;
@@ -97,7 +87,8 @@
     position: absolute;
     right: 0;
     background-color: $bg-color-product-proposal-right;
-    transform: translateX(8888px);
+    transform: translate(8888px);
+    transition: transform 800ms cubic-bezier(.36,0,.08,1);
 
     input {
       width: 1.5rem;
