@@ -1,0 +1,6 @@
+@function ellipsis($max-width) {
+  @if ($max-width > 230px) {
+    $ellipsis: ellipsis; 
+    @return $ellipsis;
+  }
+}

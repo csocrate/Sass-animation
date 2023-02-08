@@ -103,3 +103,10 @@
     }
   }
 }
+
+@mixin text_overflow($value: ellipsis($max-width)) {
+  max-width: 230px;
+  text-overflow: $value;
+  overflow: hidden;
+  white-space: nowrap;
+}

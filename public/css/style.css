@@ -35,7 +35,7 @@
   * 
   */
 /**
-  * Product checkbox
+  * Product proposal
   * 
   */
 /**
@@ -726,6 +726,45 @@ span.product-price {
     width: 48%;
   }
 }
+.menu-maker > div .products > div a:hover .product-proposal__right, .menu-maker > div .products > div a:active .product-proposal__right {
+  transform: translate(0);
+}
+.menu-maker > div .products > div a:hover .product-proposal__right > i, .menu-maker > div .products > div a:active .product-proposal__right > i {
+  animation: rotate_keyframes 500ms 800ms;
+}
+@keyframes rotate_keyframes {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.menu-maker > div .products > div a:hover .product-proposal__left div .product-detail, .menu-maker > div .products > div a:active .product-proposal__left div .product-detail {
+  animation: three_points 400ms 800ms forwards;
+}
+@keyframes three_points {
+  to {
+    max-width: 255px;
+    max-width: 230px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.menu-maker > div .products > div a:hover .product-proposal__left div .product-price, .menu-maker > div .products > div a:active .product-proposal__left div .product-price {
+  animation: moving_price 400ms 800ms forwards;
+}
+@keyframes moving_price {
+  0% {
+    padding-right: 0;
+    transform: translateX(0);
+  }
+  100% {
+    padding-right: 0.85rem;
+    transform: translateX(-43px);
+  }
+}
 
 .wrapper {
   width: 100%;
@@ -926,43 +965,6 @@ span.product-price {
     padding-bottom: 1.5rem;
   }
 }
-.product-proposal:hover > .product-proposal__right {
-  animation: selected_product 1s forwards;
-}
-@keyframes selected_product {
-  0% {
-    visibility: hidden;
-    transform: translateX(8888px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(0);
-  }
-}
-.product-proposal:hover > .product-proposal__right > i {
-  animation: rotate_keyframes 0.5s 1s;
-}
-@keyframes rotate_keyframes {
-  0% {
-    transform: rotate(0turn);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-.product-proposal:hover > .product-proposal__left div .product-price {
-  animation: moving_price 0.5s 1s forwards;
-}
-@keyframes moving_price {
-  0% {
-    padding-right: 0;
-    transform: translateX(0);
-  }
-  100% {
-    padding-right: 0.85rem;
-    transform: translateX(-43px);
-  }
-}
 .product-proposal__left {
   width: 100%;
   padding-top: 1.15rem;
@@ -995,7 +997,8 @@ span.product-price {
   position: absolute;
   right: 0;
   background-color: #99E2D0;
-  transform: translateX(8888px);
+  transform: translate(8888px);
+  transition: transform 800ms cubic-bezier(0.36, 0, 0.08, 1);
 }
 .product-proposal__right input {
   width: 1.5rem;

@@ -57,6 +57,17 @@
             .product-proposal__left {
         
               div {
+                .product-detail {
+                  animation: three_points 400ms 800ms forwards;
+
+                  @keyframes three_points {
+                    to {
+                      max-width: $max-width-product-detail;
+                      @include text_overflow($value: ellipsis($max-width-product-detail));
+                    }
+                  }
+                }
+
                 .product-price {
                   animation: moving_price 400ms 800ms forwards;
           
