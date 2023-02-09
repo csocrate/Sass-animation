@@ -517,26 +517,26 @@ span.product-price {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 0%;
+  transform: scaleX(0);
 }
 .wrapper--single-page .banner > div > div .banner-single > div i.fa-regular:hover::after, .wrapper--single-page .banner > div > div .banner-single > div i.fa-regular:active::after {
   animation: liked 500ms forwards;
 }
 @keyframes liked {
   0% {
-    width: 5%;
+    transform: scaleX(0.05);
   }
   25% {
-    width: 25%;
+    transform: scaleX(0.25);
   }
   50% {
-    width: 50%;
+    transform: scaleX(0.5);
   }
   75% {
-    width: 75%;
+    transform: scaleX(0.75);
   }
   100% {
-    width: 100%;
+    transform: scaleX(1);
   }
 }
 .wrapper--single-page .banner img {
@@ -859,26 +859,26 @@ span.product-price {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 0%;
+  transform: scaleX(0);
 }
 .card a .card-details__right i.fa-regular:hover::after, .card a .card-details__right i.fa-regular:active::after {
   animation: liked 500ms forwards;
 }
 @keyframes liked {
   0% {
-    width: 5%;
+    transform: scaleX(0.05);
   }
   25% {
-    width: 25%;
+    transform: scaleX(0.25);
   }
   50% {
-    width: 50%;
+    transform: scaleX(0.5);
   }
   75% {
-    width: 75%;
+    transform: scaleX(0.75);
   }
   100% {
-    width: 100%;
+    transform: scaleX(1);
   }
 }
 .card a .card-img {
