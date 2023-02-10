@@ -86,7 +86,7 @@
       height: 40vh;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 991px) {
       height: 60vh;
     }
 
@@ -114,10 +114,18 @@
         background-color: $grey-light;  
         border-top-left-radius: 50px;
         border-top-right-radius: 50px; 
-        padding-top: 2.1rem;
+        padding-top: 2.5rem;
 
         @media (min-width: 768px) {
           @include max-width(90%, 1400px);        
+        }
+
+        @media (min-width: 991px) {
+          padding-top: 3.25rem;       
+        }
+
+        @media (min-width: 1400px) {
+          padding-top: 4rem;       
         }
         
         .banner-single {        

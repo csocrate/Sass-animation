@@ -6,7 +6,6 @@
     position: relative;
     @include max-width(82%, 1400px);
     height: 4rem;
-    margin-top: .5rem;
     padding: 2rem 0;
 
     @media (min-width: 1400px ) {
