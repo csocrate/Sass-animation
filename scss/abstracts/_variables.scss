@@ -87,15 +87,11 @@ $font-size-h3-single:                   $font-size-normal * 1.22;
 $font-size-h3-single-md:                $font-size-normal * 1.15;
 $font-size-h3-single-lg:                $font-size-normal * 1.2;
 $font-size-h3-single-xl:                $font-size-normal * 1.25;// Not used
-$line-height-h3-single:                 $line-height-normal * 1.15;
+$line-height-h3-single:                 $line-height-normal * 1.75;
 
 //== p ==
 $font-size-p-banner:                    $font-size-normal * 1.2;
 $line-height-p-banner:                  $line-height-normal * 1.15;
-$font-size-product-detail-md:                $font-size-normal * .975;
-$font-size-product-detail-lg:                $font-size-normal * 1.05;
-$font-size-product-detail-xl:                $font-size-normal * 1.1;
-$line-height-product-detail:                 $line-height-normal * 1.15;
 $font-weight-p:                         400;
 
 
@@ -162,26 +158,34 @@ $bg-color-step:                            $grey-light;
   * Card
   * 
   */
-  $font-size-h3-card:                   $font-size-normal * 1.2;
-  $font-size-p-card:                    $font-size-normal * 1.1;
-  $font-size-i-card:                    $font-size-normal * 1.5;
+$font-size-h3-card:                   $font-size-normal * 1.2;
+$font-size-p-card:                    $font-size-normal * 1.1;
+$font-size-i-card:                    $font-size-normal * 1.5;
 
-  $line-height-p-card:                  $line-height-normal * 1.15;
+$line-height-p-card:                  $line-height-normal * 1.15;
 
-  $color-card-a-alt:                    $black;
-  $color-card-i:                        $black-light;
+$color-card-a-alt:                    $black;
+$color-card-i:                        $black-light;
 
-  $bg-color-card-details:               $white;
-  $bg-color-card-i:                     $main-linear-gradient;
-  $bg-color-cards:                      $grey-light;
+$bg-color-card-details:               $white;
+$bg-color-card-i:                     $main-linear-gradient;
+$bg-color-cards:                      $grey-light;
 
 /**
-  * Product proposal
+  * Product
   * 
   */
-  $max-width-product-detail:            255px;
-  $bg-color-product-proposal:           $white;
-  $bg-color-product-proposal-right:     $tertiary-color;
+$font-size-product-detail:            $font-size-normal * .975;
+$font-size-product-detail-lg:         $font-size-normal * 1.05;
+$font-size-product-detail-xl:         $font-size-normal * 1.1;
+$font-size-i-product:                 $font-size-normal * .975;
+$line-height-product-detail:          $line-height-normal * 1.15;
+$font-weight-product-detail:          400;
+
+$max-width-product-detail:            255px;
+$bg-color-product-icon:               $white;
+$bg-color-product:           $white;
+$bg-color-product-right:     $tertiary-color;
 
 // --------------------------------------------------
 // LAYOUT
@@ -193,7 +197,7 @@ $bg-color-step:                            $grey-light;
 $font-size-i-header:                    $font-size-normal * 1.55;
 
 /**
-  * Banner
+  * Banner section
   * 
   */
 $font-size-i-banner-single:             $font-size-normal * 1.75;
@@ -203,11 +207,11 @@ $bg-color-last-child:                   $grey-light;
 $bg-color-banner-single-page:           $black-light;
 
 /**
-  * Menu maker section
+  * Products section
   * 
   */
-  $bg-color-menu-maker:                 $white;
-  $bg-color-menu-maker-first-div:       $grey-light;
+$bg-color-products:                 $white;
+$bg-color-products-first-div:       $grey-light;
 
 /**
 * Footer

@@ -201,11 +201,9 @@ span {
   }
 
   &.product-detail {
+    font-size: $font-size-product-detail;
     line-height: $line-height-product-detail;
-
-    @media (min-width: 768px) {
-      font-size: $font-size-product-detail-md;
-    }
+    font-weight: $font-weight-product-detail;
 
     @media (min-width: 1024px) {
       font-size: $font-size-product-detail-lg;
@@ -216,7 +214,7 @@ span {
     }
   }
 
-  &.product-price {
+  &.price {
     font-weight: 900;
   }
 }
@@ -242,4 +240,9 @@ span {
       font-size:  $font-size-i-banner-single;
     }
   }
+  .product-check {
+    i {
+      font-size: $font-size-i-product;
+    }
+  } 
 }

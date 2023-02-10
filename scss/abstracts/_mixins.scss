@@ -44,7 +44,7 @@
 
 @mixin animated-heart($color:$color-card-i, $bg-color:$bg-color-card-i) {
   i {
-    &.fa-regular {
+    &.fa-heart {
       position: relative;
       background: transparent;
       -webkit-background-clip: text;
@@ -62,7 +62,6 @@
         background: $bg-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        // width: 0%;
         transform: scaleX(0);
       }
 
@@ -70,54 +69,27 @@
       &:active {
         &::after {
           animation: liked 500ms forwards;
-
-          @keyframes liked {
-
-            0% {
-              transform: scaleX(.05);
-            }
-            25% {
-              transform: scaleX(.25);
-            }
-            50% {
-              transform: scaleX(.5);
-            }
-            75% {
-              transform: scaleX(.75);
-            }
-            100% {
-              transform: scaleX(1);
-            }
-            // 0% {  
-            //   width: 5%;
-            // }
-            // 25% {          
-            //   width: 25%;
-            // }
-            // 50% {          
-            //   width: 50%;
-            // }
-            // 75% {          
-            //   width: 75%;
-            // }
-            // 100% {          
-            //   width: 100%;
-            // }
-          }
         }
       }
     }
   }
 }
 
-@mixin rotate_keyframes {  
-  @keyframes rotate_keyframes {
-    0% {
-      transform: rotate(0turn);
-    }
-    100% {
-      transform: rotate(1turn);
-    }
+@keyframes liked {
+  0% {
+    transform: scaleX(.05);
+  }
+  25% {
+    transform: scaleX(.25);
+  }
+  50% {
+    transform: scaleX(.5);
+  }
+  75% {
+    transform: scaleX(.75);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 

@@ -1,0 +1,75 @@
+.products {
+  background-color: $bg-color-products;
+
+  @media (min-width: 768px) {
+    @include max-width(90%, 1400px);
+  }
+
+  > div {
+    background-color: $bg-color-products-first-div;
+
+    .products-container {
+      @include max-width(90%, 1000px);
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      h2 {
+        &::after {
+          display: block;
+          content: "";
+          width: 2.85rem;
+          height: .25rem;
+          background-color: $tertiary-color;
+
+          @media (min-width: 768px) {
+            width: 2.95rem;
+          }
+      
+          @media (min-width: 1400px) {
+            width: 3.15rem;
+          }
+      
+          @media (min-width: 1600px) {
+            width: 3.35rem;
+          }
+        }
+      }
+
+      > div {
+        @include flexbox(null, center, center, wrap);
+        gap: 1.25rem;
+
+        @media (min-width: 991px) {
+          gap: 1.5rem;
+          @include max-width(100%, 845px);
+        }
+
+        a {
+          @include flexbox(null, space-between, center, null);
+          border-radius: 15px;
+          width: 100%;
+          box-shadow: #d9d9d9 0 5px 12px;
+          background-color: #FFF;
+
+          @media (min-width: 768px) {
+            width: 62%;
+          }
+
+          @media (min-width: 991px) {
+            width: 48%;
+          }
+
+          &:hover {           
+           .product__check {
+             width: 5rem;
+        
+              & > i {
+                animation: rotate_1turn 800ms;
+              }
+            }
+          }
+        }
+      }  
+    }
+  }
+}

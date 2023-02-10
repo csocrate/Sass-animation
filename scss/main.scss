@@ -1,4 +1,5 @@
 @import
+  'abstracts/animations',
   'abstracts/functions',
   'abstracts/mixins',
   'abstracts/variables';
@@ -13,13 +14,13 @@
   'layout/footer',
   'layout/header',
   'layout/how-it-works',
-  'layout/menu-maker',
+  'layout/products',
   'layout/wrapper';
 
 @import
   'components/card',
   'components/loading-spinner',
-  'components/product-proposal',
+  'components/product',
   'components/search-form',
   'components/_step-how-it-works';
 
