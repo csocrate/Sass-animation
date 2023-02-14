@@ -884,13 +884,14 @@ span.price {
   left: 0;
   background-color: #000;
   opacity: 0.8;
-  animation: bg_visibility 0.7s 2s forwards;
-  visibility: visible;
+  animation: visibility 0.7s 2s forwards;
 }
-@keyframes bg_visibility {
-  to {
+@keyframes visibility {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
     opacity: 0;
-    visibility: hidden;
   }
 }
 .loading span {
@@ -932,6 +933,24 @@ span.price {
   position: relative;
   overflow: hidden;
   background-color: #FFF;
+  animation: visibility 1000ms ease-in-out 1 alternate backwards;
+}
+.product--1 {
+  animation-delay: 666.6666666667ms;
+}
+.product--2 {
+  animation-delay: 1333.3333333333ms;
+}
+.product--3 {
+  animation-delay: 2000ms;
+}
+@keyframes visibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (min-width: 768px) {
   .product {

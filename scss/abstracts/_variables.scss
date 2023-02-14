@@ -6,30 +6,30 @@
   * Colors
   * 
   */
-  $primary-color:                       #9356DC;
-  $secondary-color:                     #FF79DA;
-  $tertiary-color:                      #99E2D0;
+$primary-color:                       #9356DC;
+$secondary-color:                     #FF79DA;
+$tertiary-color:                      #99E2D0;
 
-  $black:                               #000;
-  $black-light:                           lighten($black, 30%); // #4D4D4D
-  $current-color:                         currentColor;
-  $grey:                                  lighten($black, 88%); // #F2F2F2
-  $grey-light:                            lighten($black, 97%); // #F7F7F7
-  $main-linear-gradient:                  linear-gradient($secondary-color,$primary-color);
-  $main-linear-gradient-right:            linear-gradient(to right,$secondary-color 10%,$primary-color 90%);
-  $transparent:                           transparent;
-  $white:                               #FFF;
+$black:                               #000;
+$black-light:                           lighten($black, 30%); // #4D4D4D
+$current-color:                         currentColor;
+$grey:                                  lighten($black, 88%); // #F2F2F2
+$grey-light:                            lighten($black, 97%); // #F7F7F7
+$main-linear-gradient:                  linear-gradient($secondary-color,$primary-color);
+$main-linear-gradient-right:            linear-gradient(to right,$secondary-color 10%,$primary-color 90%);
+$transparent:                           transparent;
+$white:                               #FFF;
 
 /**
   * Typography
   * 
   */
-  $font-family-txt:                      'Roboto', sans-serif;
+$font-family-txt:                      'Roboto', sans-serif;
 
-  $font-size-init:                       16px;
-  $font-size-normal:                     1em;
+$font-size-init:                       16px;
+$font-size-normal:                     1em;
 
-  $line-height-normal:                   1;
+$line-height-normal:                   1;
 
 /**
   * .body
@@ -184,8 +184,10 @@ $font-weight-product-detail:          400;
 
 $max-width-product-detail:            255px;
 $bg-color-product-icon:               $white;
-$bg-color-product:           $white;
-$bg-color-product-right:     $tertiary-color;
+$bg-color-product:                    $white;
+$bg-color-product-right:              $tertiary-color;
+
+$anim-duration-product:               1000ms;
 
 // --------------------------------------------------
 // LAYOUT
