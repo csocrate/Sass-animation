@@ -64,44 +64,6 @@
             gap: 1.5rem;
             @include max-width(100%, 845px);
           }
-  
-          a {
-            @include flexbox(null, space-between, center, null);
-            border-radius: 15px;
-            width: 100%;
-            box-shadow: #d9d9d9 0 5px 12px;
-            background-color: #FFF;
-  
-            @media (min-width: 768px) {
-              width: 62%;
-            }
-  
-            @media (min-width: 991px) {
-              width: 100%;
-            }
-
-            @media (min-width: 1200px) {
-              width: 95%;
-            }
-
-            @media (min-width: 1400px) {
-              width: 80%;
-            }
-
-            @media (min-width: 1600px) {
-              width: 75%;
-            }
-  
-            &:hover {           
-             .product__check {
-               width: 5rem;
-          
-                & > i {
-                  animation: rotate_1turn 800ms;
-                }
-              }
-            }
-          }
         }  
       }
     }
