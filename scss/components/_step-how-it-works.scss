@@ -21,7 +21,7 @@
     padding-bottom: 1.85rem;
     padding-left: 2.25rem;
     border-radius: 25px;  
-    @include box-shadow;
+    @include box_shadow;
     background-color: $bg-color-step;
     order: 2;
 

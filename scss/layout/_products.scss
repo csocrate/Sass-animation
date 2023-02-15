@@ -2,15 +2,16 @@
   background-color: $bg-color-products;
 
   @media (min-width: 768px) {
-    @include max-width(90%, 1400px);
+    @include max_width(90%, 1400px);
   }
 
   > div {
+    @include flexbox(column, null, center, null);
     background-color: $bg-color-products-first-div;
 
     > div {
       @include flexbox(null, center, null, wrap);
-      @include max-width(90%, 1400px);
+      @include max_width(90%, 1400px);
       gap: 3rem;
       padding-top: 2rem;
       padding-bottom: 3rem;
@@ -62,7 +63,7 @@
   
           @media (min-width: 991px) {
             gap: 1.5rem;
-            @include max-width(100%, 845px);
+            @include max_width(100%, 845px);
           }
         }  
       }

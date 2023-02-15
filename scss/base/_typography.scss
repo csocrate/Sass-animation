@@ -145,11 +145,11 @@ p {
  * a
  */
 
-//== Banner call to action ==
-.banner {
-  a {
-    @include cta-button-typo($font-size-banner-cta, $font-weight-banner-cta, $color-banner-cta, $color-banner-cta-alt);
-    
+//== Main call to action ==
+a {
+  &.cta {
+    @include cta_button_typo($font-size-banner-cta, $font-weight-banner-cta, $color-banner-cta, $color-banner-cta-alt);
+  
     @media (min-width: 1600px) {
       font-size: $font-size-banner-cta-xxl;
     }

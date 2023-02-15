@@ -1,14 +1,17 @@
-@mixin box-shadow($color:$black, $amount:85%, $size: 0 5px 12px) {
+@mixin box_shadow($color:$black, $amount:85%, $size: 0 5px 12px) {
   box-shadow: lighten($black, $amount) $size;
 }
 
-@mixin cta-button($vertical-padding, $horizontal-padding, $size, $bg-color) {
+/*
+ * Main call to action
+ */
+@mixin cta_button($vertical-padding, $horizontal-padding, $size, $bg-color) {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: $vertical-padding $horizontal-padding;
   border-radius: $size;
-  @include box-shadow($amount:65%);
+  @include box_shadow($amount:65%);
   background: $bg-color;
 
   &:hover {            
@@ -16,17 +19,31 @@
   }
 }
 
-@mixin cta-button-typo($size, $font-weight, $color, $color-alt) {
+@mixin cta_button_base($size, $bg-color) {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: $size;
+  @include box_shadow($amount:65%);
+  background: $bg-color;
+
+  &:hover {
+    box-shadow: rgba($black,.5) 0 7px 12px;
+    background: $bg-color-banner-cta-alt;
+  }
+}
+
+@mixin cta_button_padding($vertical-padding, $horizontal-padding) {
+  padding: $vertical-padding $horizontal-padding;
+}
+
+@mixin cta_button_typo($size, $font-weight, $color, $color-alt) {
   font-size: $size;
   font-weight: $font-weight;
   color: $color;
   cursor: pointer;
-
-  &:hover {
-    transform: scale(1.03);
-    color: $color-alt;
-  }
 }
+/* End Main call to action */
 
 @mixin flexbox($direction, $justify, $align, $wrap) {
   display: flex;
@@ -36,7 +53,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin max-width($width, $max-width) {
+@mixin max_width($width, $max-width) {
   width: $width;
   max-width: $max-width;
   margin: 0 auto 

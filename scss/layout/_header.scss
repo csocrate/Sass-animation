@@ -4,7 +4,7 @@
   > div {
     @include flexbox(null,center,center,null);
     position: relative;
-    @include max-width(82%, 1400px);
+    @include max_width(82%, 1400px);
     height: 4rem;
     padding: 2rem 0;
 

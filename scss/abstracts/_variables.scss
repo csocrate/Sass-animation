@@ -12,11 +12,13 @@ $tertiary-color:                      #99E2D0;
 
 $black:                               #000;
 $black-light:                           lighten($black, 30%); // #4D4D4D
-$current-color:                         currentColor;
 $grey:                                  lighten($black, 88%); // #F2F2F2
 $grey-light:                            lighten($black, 97%); // #F7F7F7
-$main-linear-gradient:                  linear-gradient($secondary-color,$primary-color);
-$main-linear-gradient-right:            linear-gradient(to right,$secondary-color 10%,$primary-color 90%);
+$primary-color-light:                   lighten($primary-color, 5%); // #A16BE0
+$secondary-color-light:                 lighten($secondary-color, 4%); // #FF8DE0
+$main-linear-gradient:                  linear-gradient($secondary-color, $primary-color);
+$main-linear-gradient-light:            linear-gradient($secondary-color-light, $primary-color-light);
+$secondary-color-light:                 lighten($secondary-color, 80%);
 $transparent:                           transparent;
 $white:                               #FFF;
 
@@ -24,12 +26,12 @@ $white:                               #FFF;
   * Typography
   * 
   */
-$font-family-txt:                      'Roboto', sans-serif;
+$font-family-txt:                       'Roboto', sans-serif;
 
-$font-size-init:                       16px;
-$font-size-normal:                     1em;
+$font-size-init:                        16px;
+$font-size-normal:                      1em;
 
-$line-height-normal:                   1;
+$line-height-normal:                    1;
 
 /**
   * .body
@@ -96,7 +98,7 @@ $font-weight-p:                         400;
 
 
 //== a ==
-$color-a:                               $current-color;
+$color-a:                               currentColor;
 $color-a-alt:                           $secondary-color;
 
 // --------------------------------------------------
@@ -131,63 +133,64 @@ $bg-color-input:                        $transparent;
   * Call to action button
   * 
   */
-$font-size-banner-cta:                    $font-size-normal * 1.1;
-$font-size-banner-cta-xxl:                $font-size-normal * 1.25;
-$font-weight-banner-cta:                  500;
-$color-banner-cta:                        $white;
-$color-banner-cta-alt:                    $white;
-$bg-color-banner-cta:                     $main-linear-gradient;
+$font-size-banner-cta:                  $font-size-normal * 1.1;
+$font-size-banner-cta-xxl:              $font-size-normal * 1.25;
+$font-weight-banner-cta:                500;
+$color-banner-cta:                      $white;
+$color-banner-cta-alt:                  $white;
+$bg-color-banner-cta:                   $main-linear-gradient;
+$bg-color-banner-cta-alt:               $main-linear-gradient-light;
 
 /**
   * Step how it works
   * 
   */
-$font-size-nb-step:                        $font-size-normal * .875;
-$font-weight-nb-step:                      700;
-$color-nb-step:                            $white;
-$bg-color-nb-step:                         $primary-color;
+$font-size-nb-step:                     $font-size-normal * .875;
+$font-weight-nb-step:                   700;
+$color-nb-step:                         $white;
+$bg-color-nb-step:                      $primary-color;
 
-$font-weight-h3-step:                      500;
+$font-weight-h3-step:                   500;
 
-$font-size-i-step:                         $font-size-normal * 1.4;
-$color-i-step:                             $primary-color;
+$font-size-i-step:                      $font-size-normal * 1.4;
+$color-i-step:                          $primary-color;
 
-$bg-color-step:                            $grey-light;
+$bg-color-step:                         $grey-light;
 
 /**
   * Card
   * 
   */
-$font-size-h3-card:                   $font-size-normal * 1.2;
-$font-size-p-card:                    $font-size-normal * 1.1;
-$font-size-i-card:                    $font-size-normal * 1.5;
+$font-size-h3-card:                     $font-size-normal * 1.2;
+$font-size-p-card:                      $font-size-normal * 1.1;
+$font-size-i-card:                      $font-size-normal * 1.5;
 
-$line-height-p-card:                  $line-height-normal * 1.15;
+$line-height-p-card:                    $line-height-normal * 1.15;
 
-$color-card-a-alt:                    $black;
-$color-card-i:                        $black-light;
+$color-card-a-alt:                      $black;
+$color-card-i:                          $black-light;
 
-$bg-color-card-details:               $white;
-$bg-color-card-i:                     $main-linear-gradient;
-$bg-color-cards:                      $grey-light;
+$bg-color-card-details:                 $white;
+$bg-color-card-i:                       $main-linear-gradient;
+$bg-color-cards:                        $grey-light;
 
 /**
   * Product
   * 
   */
-$font-size-product-detail:            $font-size-normal * .975;
-$font-size-product-detail-lg:         $font-size-normal * 1.05;
-$font-size-product-detail-xl:         $font-size-normal * 1.1;
-$font-size-i-product:                 $font-size-normal * .975;
-$line-height-product-detail:          $line-height-normal * 1.15;
-$font-weight-product-detail:          400;
+$font-size-product-detail:              $font-size-normal * .975;
+$font-size-product-detail-lg:           $font-size-normal * 1.05;
+$font-size-product-detail-xl:           $font-size-normal * 1.1;
+$font-size-i-product:                   $font-size-normal * .975;
+$line-height-product-detail:            $line-height-normal * 1.15;
+$font-weight-product-detail:            400;
 
-$max-width-product-detail:            255px;
-$bg-color-product-icon:               $white;
-$bg-color-product:                    $white;
-$bg-color-product-right:              $tertiary-color;
+$max-width-product-detail:              255px;
+$bg-color-product-icon:                 $white;
+$bg-color-product:                      $white;
+$bg-color-product-right:                $tertiary-color;
 
-$anim-duration-product:               1000ms;
+$anim-duration-product:                 1000ms;
 
 // --------------------------------------------------
 // LAYOUT
@@ -212,30 +215,30 @@ $bg-color-banner-single-page:           $black-light;
   * Products section
   * 
   */
-$bg-color-products:                 $white;
-$bg-color-products-first-div:       $grey-light;
+$bg-color-products:                     $white;
+$bg-color-products-first-div:           $grey-light;
 
 /**
 * Footer
 * 
 */
-$font-family-h4-footer:               'Shrikhand', cursive;
-$font-size-h4-footer:                 $font-size-normal * 1.25;
-$font-size-h4-footer-md:              $font-size-normal * 1.15;
-$font-size-h4-footer-xl:              $font-size-normal * 1.25;
-$font-size-h4-footer-xxl:             $font-size-normal * 1.35;
-$font-size-a-footer:                  $font-size-normal * 1.1;
-$font-size-a-footer-md:               $font-size-normal;
-$font-size-a-footer-xl:               $font-size-normal * 1.05;
-$font-size-i-footer:                  $font-size-normal * .8;
-$font-weight-h4-footer:               500;
-$line-height-h4-footer:               $line-height-normal * 1.15;
-$font-weight-a-footer:                500;
-$font-weight-a-last-footer:           400;
-$line-height-a-footer:                $line-height-normal * 1.55;
+$font-family-h4-footer:                 'Shrikhand', cursive;
+$font-size-h4-footer:                   $font-size-normal * 1.25;
+$font-size-h4-footer-md:                $font-size-normal * 1.15;
+$font-size-h4-footer-xl:                $font-size-normal * 1.25;
+$font-size-h4-footer-xxl:               $font-size-normal * 1.35;
+$font-size-a-footer:                    $font-size-normal * 1.1;
+$font-size-a-footer-md:                 $font-size-normal;
+$font-size-a-footer-xl:                 $font-size-normal * 1.05;
+$font-size-i-footer:                    $font-size-normal * .8;
+$font-weight-h4-footer:                 500;
+$line-height-h4-footer:                 $line-height-normal * 1.15;
+$font-weight-a-footer:                  500;
+$font-weight-a-last-footer:             400;
+$line-height-a-footer:                  $line-height-normal * 1.55;
 
-$color-h4-footer:                     $white;
-$color-a-footer:                      $grey-light;
-$bg-color-footer:                     $black-light;
+$color-h4-footer:                       $white;
+$color-a-footer:                        $grey-light;
+$bg-color-footer:                       $black-light;
 
 

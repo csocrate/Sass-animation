@@ -17,10 +17,10 @@
   a {
     @include flexbox(column, center, null, null);
     border-radius: 20px;
-    @include box-shadow;
+    @include box_shadow;
 
     &:hover {
-      @include box-shadow($amount:70%, $size: 0 8px 24px);
+      @include box_shadow($amount:70%, $size: 0 8px 24px);
       color: $color-card-a-alt;
     }
 

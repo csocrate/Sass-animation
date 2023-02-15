@@ -36,7 +36,7 @@
   .how-it-works,
   .cards {
     > div {
-      @include max-width(90%, 1400px);
+      @include max_width(90%, 1400px);
     }
   }
 

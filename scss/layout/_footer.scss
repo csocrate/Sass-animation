@@ -14,7 +14,7 @@
   }
 
   &__main {
-    @include max-width(90%, 1400px);
+    @include max_width(90%, 1400px);
 
     h4 {
       padding-bottom: 2rem;
