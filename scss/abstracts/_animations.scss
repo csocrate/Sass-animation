@@ -1,5 +1,5 @@
 /**
-  * Loading-spinner animation
+  * Loading spinner
   */
 @keyframes rotate_1turn {
   0% {
@@ -15,11 +15,10 @@
     opacity: 0;
     z-index: -888;
   }
-} 
-/* End Loading-spinner animation */
+} /* End Loading spinner */
 
 /**
-  * Heart icon animation
+  * Filled heart icon
   */
 @mixin animated-heart($color:$color-card-i, $bg-color:$bg-color-card-i) {
   i {
@@ -70,10 +69,10 @@
   100% {
     transform: scaleX(1);
   }
-} /* End Heart icon animation */
+} /* End Filled heart icon */
 
 /**
-  * Check mark animation
+  * Check mark
   */
 @mixin one_by_one($anim-duration, $nb-elt) {
   $anim-delay: layering($anim-duration, $nb-elt);
@@ -94,4 +93,4 @@
       opacity: $to;
     }
   }
-} /* End Check mark animation */
+} /* End Check mark */

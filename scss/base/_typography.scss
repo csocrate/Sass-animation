@@ -11,15 +11,23 @@ h1 {
     font-weight: $font-weight-h1-page;
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-375) {
+      font-size: $font-size-h1-page-375;
+    }
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-h1-page-411;
+    }
+
+    @media (min-width: $breakpoint-md) {
       font-size: $font-size-h1-page-md;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-h1-page-xl;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: $breakpoint-xxxl) {
       font-size: $font-size-h1-page-xxl;
     }
 
@@ -28,15 +36,15 @@ h1 {
       font-size: $font-size-h1-single;
       font-weight: $font-weight-h1-single;
 
-      @media (min-width: 768px) {
+      @media (min-width: $breakpoint-md) {
         font-size: $font-size-h1-single-md;
       }
   
-      @media (min-width: 1400px) {
+      @media (min-width: $breakpoint-xxl) {
         font-size: $font-size-h1-single-xl;
       }
   
-      @media (min-width: 1600px) {
+      @media (min-width: $breakpoint-xxxl) {
         font-size: $font-size-h1-single-xxl;
       }
     }
@@ -48,15 +56,23 @@ h2 {
     font-size: $font-size-h2-home;
     line-height: $line-height-h2-home;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-375) {
+      font-size: $font-size-h2-home-375;
+    }
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-h2-home-411;
+    }
+
+    @media (min-width: $breakpoint-md) {
       font-size: $font-size-h2-home-md;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-h2-home-xl;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: $breakpoint-xxxl) {
       font-size: $font-size-h2-home-xxl;
     }
   }
@@ -68,15 +84,15 @@ h2 {
     line-height: $line-height-h2-single;
     color: $color-h2-single;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-md) {
       font-size: $font-size-h2-single-md;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-h2-single-xl;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: $breakpoint-xxxl) {
       font-size: $font-size-h2-single-xxl;
     }
   }
@@ -96,11 +112,11 @@ h3 {
     font-size: $font-size-h3-single;
     line-height: $line-height-h3-single;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-md) {
       font-size: $font-size-h3-single-md;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-lg) {
       font-size: $font-size-h3-single-lg;
     }
   }
@@ -113,15 +129,15 @@ h4 {
   line-height: $line-height-h4-footer;
   color: $color-h4-footer;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     font-size: $font-size-h4-footer-md;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: $breakpoint-xxl) {
     font-size: $font-size-h4-footer-xl;
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: $breakpoint-xxxl) {
     font-size: $font-size-h4-footer-xxl;
   }
 }
@@ -133,6 +149,14 @@ p {
     font-size: $font-size-p-banner;
     line-height: $line-height-p-banner;
     text-align: center;
+
+    @media (min-width: $breakpoint-375) {
+      font-size: $font-size-p-banner-375;
+    }
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-p-banner-411;
+    }
   }
 
   &.p-card {
@@ -150,7 +174,15 @@ a {
   &.cta {
     @include cta_button_typo($font-size-banner-cta, $font-weight-banner-cta, $color-banner-cta, $color-banner-cta-alt);
   
-    @media (min-width: 1600px) {
+    @media (min-width: $breakpoint-375) {
+      font-size: $font-size-banner-cta-375;
+    }
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-banner-cta-411;
+    }
+
+    @media (min-width: $breakpoint-xxxl) {
       font-size: $font-size-banner-cta-xxl;
     }
   }
@@ -166,11 +198,11 @@ a {
       color: $color-a-alt;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-md) {
       font-size: $font-size-a-footer-md;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: $breakpoint-xxxl) {
       font-size: $font-size-a-footer-xl;
     }
   }
@@ -205,11 +237,11 @@ span {
     line-height: $line-height-product-detail;
     font-weight: $font-weight-product-detail;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-lg) {
       font-size: $font-size-product-detail-lg;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-product-detail-xl;
     }
   }
@@ -238,6 +270,10 @@ span {
   .banner {
     i {
       font-size:  $font-size-i-banner-single;
+
+      @media (min-width: $breakpoint-411) {
+        font-size: $font-size-i-banner-single-411;
+      }
     }
   }
   .product-check {

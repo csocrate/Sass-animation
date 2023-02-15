@@ -1,5 +1,5 @@
 /**
-  * Loading-spinner animation
+  * Loading spinner
   */
 @keyframes rotate_1turn {
   0% {
@@ -14,10 +14,9 @@
     opacity: 0;
     z-index: -888;
   }
-}
-/* End Loading-spinner animation */
+} /* End Loading spinner */
 /**
-  * Heart icon animation
+  * Filled heart icon
   */
 @keyframes liked {
   0% {
@@ -35,15 +34,19 @@
   100% {
     transform: scaleX(1);
   }
-} /* End Heart icon animation */
+} /* End Filled heart icon */
 /**
-  * Check mark animation
+  * Check mark
   */
-/* End Check mark animation */
+/* End Check mark */
 /*
  * Main call to action
  */
 /* End Main call to action */
+/**
+  * Breakpoints
+  * 
+  */
 /**
   * Colors
   * 
@@ -164,10 +167,20 @@ h3 {
 }
 
 h1.h1-page {
-  font-size: 1.75em;
+  font-size: 1.25em;
   line-height: 1.2;
   font-weight: 500;
   text-align: center;
+}
+@media (min-width: 375px) {
+  h1.h1-page {
+    font-size: 1.45em;
+  }
+}
+@media (min-width: 411px) {
+  h1.h1-page {
+    font-size: 1.75em;
+  }
 }
 @media (min-width: 768px) {
   h1.h1-page {
@@ -186,7 +199,7 @@ h1.h1-page {
 }
 h1.h1-page--single {
   font-family: "Shrikhand", cursive;
-  font-size: 1.98em;
+  font-size: 1.25em;
   font-weight: 500;
 }
 @media (min-width: 768px) {
@@ -206,8 +219,18 @@ h1.h1-page--single {
 }
 
 h2.h2-home {
-  font-size: 1.75em;
+  font-size: 1.25em;
   line-height: 1.2;
+}
+@media (min-width: 375px) {
+  h2.h2-home {
+    font-size: 1.45em;
+  }
+}
+@media (min-width: 411px) {
+  h2.h2-home {
+    font-size: 1.75em;
+  }
 }
 @media (min-width: 768px) {
   h2.h2-home {
@@ -263,7 +286,7 @@ h3.h3-product {
     font-size: 1.15em;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   h3.h3-product {
     font-size: 1.2em;
   }
@@ -296,9 +319,19 @@ p {
   font-weight: 400;
 }
 p.p-banner {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.15;
   text-align: center;
+}
+@media (min-width: 375px) {
+  p.p-banner {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 411px) {
+  p.p-banner {
+    font-size: 1.2em;
+  }
 }
 p.p-card {
   font-size: 1.1em;
@@ -309,10 +342,20 @@ p.p-card {
  * a
  */
 a.cta {
-  font-size: 1.1em;
+  font-size: 0.875em;
   font-weight: 500;
   color: #FFF;
   cursor: pointer;
+}
+@media (min-width: 375px) {
+  a.cta {
+    font-size: 1em;
+  }
+}
+@media (min-width: 411px) {
+  a.cta {
+    font-size: 1.1em;
+  }
 }
 @media (min-width: 1600px) {
   a.cta {
@@ -359,7 +402,7 @@ span.product-detail {
   line-height: 1.15;
   font-weight: 400;
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   span.product-detail {
     font-size: 1.05em;
   }
@@ -385,7 +428,12 @@ span.price {
 }
 
 .wrapper--single-page .banner i {
-  font-size: 1.75em;
+  font-size: 1.35em;
+}
+@media (min-width: 411px) {
+  .wrapper--single-page .banner i {
+    font-size: 1.75em;
+  }
 }
 .wrapper--single-page .product-check i {
   font-size: 0.975em;
@@ -419,12 +467,12 @@ span.price {
     max-width: 500px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .banner > div:last-child div {
     max-width: 700px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .banner > div:last-child div {
     height: 450px;
   }
@@ -434,14 +482,19 @@ span.price {
   margin-bottom: 1.15rem;
 }
 .banner > div:last-child div h1 {
-  max-width: 300px;
+  max-width: 235px;
+}
+@media (min-width: 411px) {
+  .banner > div:last-child div h1 {
+    max-width: 300px;
+  }
 }
 @media (min-width: 768px) {
   .banner > div:last-child div h1 {
     margin-top: 2rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .banner > div:last-child div h1 {
     max-width: inherit;
   }
@@ -465,12 +518,12 @@ span.price {
     height: 40vh;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .wrapper--single-page .banner {
     height: 60vh;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .wrapper--single-page .banner {
     height: 56vh;
   }
@@ -506,7 +559,7 @@ span.price {
     margin: 0 auto;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .wrapper--single-page .banner > div > div {
     padding-top: 3.25rem;
   }
@@ -727,7 +780,7 @@ span.price {
     padding-top: 2rem;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .products > div > div .products-container {
     width: 47%;
   }
@@ -761,7 +814,7 @@ span.price {
   flex-wrap: wrap;
   gap: 1.25rem;
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .products > div > div .products-container > div {
     gap: 1.5rem;
     width: 100%;
@@ -894,7 +947,17 @@ span.price {
   }
 }
 .cta--banner {
-  padding: 1.25rem 1.5rem;
+  padding: 0.875rem 1.35rem;
+}
+@media (min-width: 375px) {
+  .cta--banner {
+    padding: 0.975rem 1.45rem;
+  }
+}
+@media (min-width: 411px) {
+  .cta--banner {
+    padding: 1.25rem 1.5rem;
+  }
 }
 .cta--order {
   padding: 1.25rem 3.25rem;
@@ -976,12 +1039,12 @@ span.price {
     width: 62%;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .product {
     width: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .product {
     width: 95%;
   }
@@ -997,7 +1060,7 @@ span.price {
   }
 }
 .product:hover .product__check {
-  width: 5rem;
+  width: 20%;
 }
 .product:hover .product__check > i {
   animation: rotate_1turn 800ms;
@@ -1019,8 +1082,8 @@ span.price {
 .product__price {
   text-align: right;
   margin-left: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.3rem;
   line-height: 3;
 }
 .product__price span {

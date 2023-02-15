@@ -22,12 +22,12 @@
   h2 {
     padding-bottom: 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-md) {
       margin-top: 1.5rem;
       margin-bottom: 1.25rem;  
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: $breakpoint-xxxl) {
       margin-top: 2.5rem;
       margin-bottom: 2.25rem;
     }

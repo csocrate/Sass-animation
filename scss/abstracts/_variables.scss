@@ -3,6 +3,22 @@
 // --------------------------------------------------
 
 /**
+  * Breakpoints
+  * 
+  */
+$breakpoint-320:                       '320px';
+$breakpoint-360:                       '360px';
+$breakpoint-375:                       '375px';
+$breakpoint-411:                       '411px';
+$breakpoint-500:                       '500px';
+$breakpoint-576:                       '576px';
+$breakpoint-md:                        '768px';
+$breakpoint-lg:                        '992px';
+$breakpoint-xl:                        '1200px'; // not used yet  
+$breakpoint-xxl:                       '1400px';
+$breakpoint-xxxl:                      '1600px';
+
+/**
   * Colors
   * 
   */
@@ -53,14 +69,17 @@ $bg-color-body:                         $white;
 $color-h1-h2-h3:                        $black;
 
 //== h1 ==
-$font-size-h1-page:                     $font-size-normal * 1.75;
+$font-size-h1-page:                     $font-size-normal * 1.25;
+$font-size-h1-page-375:                 $font-size-normal * 1.45;
+$font-size-h1-page-411:                 $font-size-normal * 1.75;
 $font-size-h1-page-md:                  $font-size-normal * 1.65;
 $font-size-h1-page-xl:                  $font-size-normal * 1.85;
 $font-size-h1-page-xxl:                 $font-size-normal * 2.05;
 $line-height-h1-page:                   $line-height-normal * 1.2;
 $font-weight-h1-page:                   500;
 
-$font-size-h1-single:                   $font-size-normal * 1.98;
+$font-size-h1-single:                   $font-size-normal * 1.25;
+$font-size-h1-single-411:               $font-size-normal * 1.98;
 $font-size-h1-single-md:                $font-size-normal * 1.7;
 $font-size-h1-single-xl:                $font-size-normal * 2;
 $font-size-h1-single-xxl:               $font-size-normal * 2.2;
@@ -69,7 +88,9 @@ $font-family-h1-single:                 'Shrikhand', cursive;
 $font-weight-h1-single:                 500;
 
 //== h2 ==
-$font-size-h2-home:                     $font-size-normal * 1.75;
+$font-size-h2-home:                     $font-size-normal * 1.25;
+$font-size-h2-home-375:                 $font-size-normal * 1.45;
+$font-size-h2-home-411:                 $font-size-normal * 1.75;
 $font-size-h2-home-md:                  $font-size-normal * 1.65;
 $font-size-h2-home-xl:                  $font-size-normal * 1.75;
 $font-size-h2-home-xxl:                 $font-size-normal * 1.875;
@@ -92,7 +113,9 @@ $font-size-h3-single-xl:                $font-size-normal * 1.25;// Not used
 $line-height-h3-single:                 $line-height-normal * 1.75;
 
 //== p ==
-$font-size-p-banner:                    $font-size-normal * 1.2;
+$font-size-p-banner:                    $font-size-normal;
+$font-size-p-banner-375:                $font-size-normal * 1.1;
+$font-size-p-banner-411:                $font-size-normal * 1.2;
 $line-height-p-banner:                  $line-height-normal * 1.15;
 $font-weight-p:                         400;
 
@@ -133,7 +156,9 @@ $bg-color-input:                        $transparent;
   * Call to action button
   * 
   */
-$font-size-banner-cta:                  $font-size-normal * 1.1;
+$font-size-banner-cta:                  $font-size-normal * .875;
+$font-size-banner-cta-375:              $font-size-normal;
+$font-size-banner-cta-411:              $font-size-normal * 1.1;
 $font-size-banner-cta-xxl:              $font-size-normal * 1.25;
 $font-weight-banner-cta:                500;
 $color-banner-cta:                      $white;
@@ -205,7 +230,8 @@ $font-size-i-header:                    $font-size-normal * 1.55;
   * Banner section
   * 
   */
-$font-size-i-banner-single:             $font-size-normal * 1.75;
+$font-size-i-banner-single:             $font-size-normal * 1.35;
+$font-size-i-banner-single-411:         $font-size-normal * 1.75;
 
 $bg-color-first-child:                  $grey;
 $bg-color-last-child:                   $grey-light;

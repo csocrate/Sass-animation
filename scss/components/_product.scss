@@ -12,29 +12,29 @@
   @include one_by_one(2000ms, 3);
   @include opacity(0, 1);
   
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     width: 62%;
   }
 
-  @media (min-width: 991px) {
+  @media (min-width: $breakpoint-lg) {
     width: 100%;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $breakpoint-xxl) {
     width: 95%;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: $breakpoint-xxl) {
     width: 80%;
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: $breakpoint-xxxl) {
     width: 75%;
   }
   
   &:hover {           
    .product__check {
-     width: 5rem;
+     width: 20%;
 
       & > i {
         animation: rotate_1turn 800ms;
@@ -62,8 +62,8 @@
   &__price {
     text-align: right;
     margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.3rem;
     line-height: 3;
 
     span {

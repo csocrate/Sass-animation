@@ -6,13 +6,13 @@
       @include flexbox(column, center, center, wrap);
       gap: 1.5rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: $breakpoint-md) {
         flex-direction: row;
         padding-top: 1rem;
         padding-bottom: 1rem;
       }
 
-      @media (min-width: 1400px) {
+      @media (min-width: $breakpoint-xxl) {
         gap: 2rem;
       }
     }

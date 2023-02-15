@@ -3,12 +3,12 @@
   padding-bottom: 2rem;
   background-color: $bg-color-footer;
 
-  @media (min-width: 1400px) {
+  @media (min-width: $breakpoint-xxl) {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: $breakpoint-xxxl) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -19,11 +19,11 @@
     h4 {
       padding-bottom: 2rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: $breakpoint-md) {
         padding-bottom: 1.5rem;
       }
 
-      @media (min-width: 1600px) {
+      @media (min-width: $breakpoint-xxxl) {
         padding-bottom: 1.25rem;
       }
     }
@@ -31,7 +31,7 @@
     > div {
       @include flexbox(column, null, null, null);
 
-      @media (min-width: 768px) {
+      @media (min-width: $breakpoint-md) {
         @include flexbox(row, space-between, null, null);
       }
 

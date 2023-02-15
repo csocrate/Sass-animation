@@ -2,15 +2,15 @@
   position: relative;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     width: 46%;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: $breakpoint-xxl) {
     width: 40%;
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: $breakpoint-xxxl) {
     width: 45%;
   }
   
@@ -64,7 +64,7 @@
         max-height: 220px;
         border-radius: 20px 20px 0 0;
 
-        @media (min-width: 1400px) {
+        @media (min-width: $breakpoint-xxl) {
           height: 350px;
           max-height: 350px;
         }
