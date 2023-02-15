@@ -1,3 +1,6 @@
+/**
+  * Loading-spinner animation
+  */
 @keyframes rotate_1turn {
   0% {
     transform: rotate(0turn);
@@ -6,6 +9,14 @@
     transform: rotate(1turn);
   }
 }
+@keyframes bg_visibility {
+  to {
+    opacity: 0;
+  }
+} /* End Loading-spinner animation */
+/**
+  * Heart icon animation
+  */
 @keyframes liked {
   0% {
     transform: scaleX(0.05);
@@ -22,7 +33,11 @@
   100% {
     transform: scaleX(1);
   }
-}
+} /* End Heart icon animation */
+/**
+  * Check mark animation
+  */
+/* End Check mark animation */
 /**
   * Colors
   * 
@@ -884,15 +899,7 @@ span.price {
   left: 0;
   background-color: #000;
   opacity: 0.8;
-  animation: visibility 0.7s 2s forwards;
-}
-@keyframes visibility {
-  0% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
-  }
+  animation: bg_visibility 0.7s 2s forwards;
 }
 .loading span {
   display: inline-block;
@@ -902,8 +909,8 @@ span.price {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
 }
 .loading > div::after {
   display: block;
@@ -945,10 +952,10 @@ span.price {
   animation-delay: 2000ms;
 }
 @keyframes visibility {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }

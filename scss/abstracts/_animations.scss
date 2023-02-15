@@ -1,3 +1,6 @@
+/**
+  * Loading-spinner animation
+  */
 @keyframes rotate_1turn {
   0% {
     transform: rotate(0turn);
@@ -6,3 +9,87 @@
     transform: rotate(1turn);
   }
 }
+
+@keyframes bg_visibility {
+  to {
+    opacity: 0;
+  }
+} /* End Loading-spinner animation */
+
+/**
+  * Heart icon animation
+  */
+@mixin animated-heart($color:$color-card-i, $bg-color:$bg-color-card-i) {
+  i {
+    &.fa-heart {
+      position: relative;
+      background: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $color;
+      font-weight: unset;
+      cursor: pointer;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: "\f004";
+        font-weight: 900;
+        background: $bg-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scaleX(0);
+      }
+
+      &:hover,
+      &:active {
+        &::after {
+          animation: liked 500ms forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes liked {
+  0% {
+    transform: scaleX(.05);
+  }
+  25% {
+    transform: scaleX(.25);
+  }
+  50% {
+    transform: scaleX(.5);
+  }
+  75% {
+    transform: scaleX(.75);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+} /* End Heart icon animation */
+
+/**
+  * Check mark animation
+  */
+@mixin one_by_one($anim-duration, $nb-elt) {
+  $anim-delay: calc($anim-duration / $nb-elt);
+
+  @for $i from 1 through $nb-elt {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+  }
+}
+
+@mixin opacity($from, $to) {
+  @keyframes visibility{
+    from {
+      opacity: $from;
+    }
+    to {
+      opacity: $to;
+    }
+  }
+} /* End Check mark animation */
