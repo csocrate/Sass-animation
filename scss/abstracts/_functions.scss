@@ -1,0 +1,4 @@
+@function layering($anim-duration, $nb-elt) {
+  $anim-delay-value: calc($anim-duration / $nb-elt);
+  @return $anim-delay-value;
+}

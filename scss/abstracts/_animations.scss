@@ -13,8 +13,10 @@
 @keyframes bg_visibility {
   to {
     opacity: 0;
+    z-index: -888;
   }
-} /* End Loading-spinner animation */
+} 
+/* End Loading-spinner animation */
 
 /**
   * Heart icon animation
@@ -74,10 +76,10 @@
   * Check mark animation
   */
 @mixin one_by_one($anim-duration, $nb-elt) {
-  $anim-delay: calc($anim-duration / $nb-elt);
-
+  $anim-delay: layering($anim-duration, $nb-elt);
+  
   @for $i from 1 through $nb-elt {
-    &--#{$i} {
+    &:nth-child(#{$i}) {
       animation-delay: $anim-delay * $i;
     }
   }
