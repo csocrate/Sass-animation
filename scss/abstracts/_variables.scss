@@ -22,11 +22,11 @@ $breakpoint-xxxl:                      '1600px';
   * Colors
   * 
   */
-$primary-color:                       #9356DC;
-$secondary-color:                     #FF79DA;
-$tertiary-color:                      #99E2D0;
+$primary-color:                        #9356DC;
+$secondary-color:                      #FF79DA;
+$tertiary-color:                       #99E2D0;
 
-$black:                               #000;
+$black:                                #000;
 $black-light:                           lighten($black, 30%); // #4D4D4D
 $grey:                                  lighten($black, 88%); // #F2F2F2
 $grey-light:                            lighten($black, 97%); // #F7F7F7
@@ -36,7 +36,7 @@ $main-linear-gradient:                  linear-gradient($secondary-color, $prima
 $main-linear-gradient-light:            linear-gradient($secondary-color-light, $primary-color-light);
 $secondary-color-light:                 lighten($secondary-color, 80%);
 $transparent:                           transparent;
-$white:                               #FFF;
+$white:                                #FFF;
 
 /**
   * Typography
@@ -79,6 +79,8 @@ $line-height-h1-page:                   $line-height-normal * 1.2;
 $font-weight-h1-page:                   500;
 
 $font-size-h1-single:                   $font-size-normal * 1.25;
+$font-size-h1-single-320:               $font-size-normal * 1.5;
+$font-size-h1-single-375:               $font-size-normal * 1.75;
 $font-size-h1-single-411:               $font-size-normal * 1.98;
 $font-size-h1-single-md:                $font-size-normal * 1.7;
 $font-size-h1-single-xl:                $font-size-normal * 2;
@@ -231,6 +233,8 @@ $font-size-i-header:                    $font-size-normal * 1.55;
   * 
   */
 $font-size-i-banner-single:             $font-size-normal * 1.35;
+$font-size-i-banner-single-320:         $font-size-normal * 1.45;
+$font-size-i-banner-single-375:         $font-size-normal * 1.55;
 $font-size-i-banner-single-411:         $font-size-normal * 1.75;
 
 $bg-color-first-child:                  $grey;

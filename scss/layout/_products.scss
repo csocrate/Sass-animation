@@ -32,6 +32,8 @@
       }
   
       .products-container {  
+        width: 100%;
+        
         @media (min-width: $breakpoint-lg) {
           width: 47%;
         }

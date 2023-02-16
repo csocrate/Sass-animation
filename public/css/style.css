@@ -202,6 +202,21 @@ h1.h1-page--single {
   font-size: 1.25em;
   font-weight: 500;
 }
+@media (min-width: 320px) {
+  h1.h1-page--single {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 375px) {
+  h1.h1-page--single {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 411px) {
+  h1.h1-page--single {
+    font-size: 1.98em;
+  }
+}
 @media (min-width: 768px) {
   h1.h1-page--single {
     font-size: 1.7em;
@@ -429,6 +444,16 @@ span.price {
 
 .wrapper--single-page .banner i {
   font-size: 1.35em;
+}
+@media (min-width: 320px) {
+  .wrapper--single-page .banner i {
+    font-size: 1.45em;
+  }
+}
+@media (min-width: 375px) {
+  .wrapper--single-page .banner i {
+    font-size: 1.55em;
+  }
 }
 @media (min-width: 411px) {
   .wrapper--single-page .banner i {
@@ -779,6 +804,9 @@ span.price {
   .products > div > div {
     padding-top: 2rem;
   }
+}
+.products > div > div .products-container {
+  width: 100%;
 }
 @media (min-width: 992px) {
   .products > div > div .products-container {
