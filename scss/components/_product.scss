@@ -8,8 +8,8 @@
   position: relative;
   overflow: hidden;
   background-color: $bg-color-product;
-  animation: visibility $anim-duration-product ease-in-out 1 alternate backwards;
-  @include one_by_one(2000ms, 3);
+  animation: visibility $anim-duration-product ease-in-out 1 alternate both;
+  @include one_by_one(800ms, 4);
   @include opacity(0, 1);
   
   @media (min-width: $breakpoint-md) {

@@ -89,10 +89,12 @@
 
 @mixin opacity($from, $to) {
   @keyframes visibility{
-    from {
+    0% {
+      transform: translateY(8px);
       opacity: $from;
     }
-    to {
+    100% {
+      transform: translateY(-5px);
       opacity: $to;
     }
   }
