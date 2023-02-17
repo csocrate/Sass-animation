@@ -11,11 +11,8 @@
 }
 
 @keyframes bg_visibility {
-  0% {
-    display: none;
-  }
   100% {
-    display: flex;
+    visibility: hidden; 
     opacity: 0;
   }
 } /* End Loading spinner */
@@ -26,31 +23,28 @@
 @mixin animated-heart($color:$color-card-i, $bg-color:$bg-color-card-i) {
   i {
     &.fa-heart {
-      position: relative;
-      background: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: $color;
-      font-weight: unset;
       cursor: pointer;
 
-      &::after {
-        position: absolute;
+      &.fa-regular {
+        -webkit-text-stroke: 1px $white; /* Similar to .fa-light appareance */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: $color;
+      }
+
+      &.fa-solid {
+        position: absolute; /* Its parent element must have a relative position. */
         top: 0;
         left: 0;
-        display: inline-block;
-        content: "\f004";
-        font-weight: 900;
         background: $bg-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: scaleX(0);
-      }
+        opacity: 0;
 
-      &:hover,
-      &:active {
-        &::after {
-          animation: liked 500ms forwards;
-        }
+        &:hover,
+        &:active {
+          animation: liked 300ms forwards;
+        }        
       }
     }
   }
@@ -58,10 +52,14 @@
 
 @keyframes liked {
   0% {
-    transform: scaleX(.05);
+    opacity: .5;
+    transform: scaleX(.15);
   }
   25% {
     transform: scaleX(.25);
+  }
+  25%,100% {
+    opacity: 1;
   }
   50% {
     transform: scaleX(.5);

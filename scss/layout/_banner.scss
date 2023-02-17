@@ -123,6 +123,7 @@
           @include max_width(90%, 1400px);
 
           & > div {
+            position: relative;
             margin-right: 1rem;
             @include animated-heart;
           }

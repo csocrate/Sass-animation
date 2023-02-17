@@ -33,6 +33,7 @@ $grey-light:                            lighten($black, 97%); // #F7F7F7
 $primary-color-light:                   lighten($primary-color, 5%); // #A16BE0
 $secondary-color-light:                 lighten($secondary-color, 4%); // #FF8DE0
 $main-linear-gradient:                  linear-gradient($secondary-color, $primary-color);
+$main-linear-gradient-reverse:          linear-gradient($primary-color, $secondary-color);
 $main-linear-gradient-light:            linear-gradient($secondary-color-light, $primary-color-light);
 $secondary-color-light:                 lighten($secondary-color, 80%);
 $transparent:                           transparent;
@@ -198,7 +199,7 @@ $color-card-a-alt:                      $black;
 $color-card-i:                          $black-light;
 
 $bg-color-card-details:                 $white;
-$bg-color-card-i:                       $main-linear-gradient;
+$bg-color-card-i:                       $main-linear-gradient-reverse;
 $bg-color-cards:                        $grey-light;
 
 /**
