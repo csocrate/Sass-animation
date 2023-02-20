@@ -244,6 +244,16 @@ span {
     color: $color-nb-step;
   }
 
+  &.flag {
+    font-size: $font-size-flag-card;
+    font-weight: $font-weight-flag;
+    @include color_adapted_to_bg_color;
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-flag-card-411;
+    }
+  }
+
   &.product-detail {
     font-size: $font-size-product-detail;
     line-height: $line-height-product-detail;
@@ -259,7 +269,7 @@ span {
   }
 
   &.price {
-    font-weight: 900;
+    font-weight: $font-weight-product-price;
   }
 }
 

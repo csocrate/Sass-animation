@@ -65,3 +65,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+@mixin color_adapted_to_bg_color($color: color_adaptation($tertiary-color)) {
+  color: $color;
+}

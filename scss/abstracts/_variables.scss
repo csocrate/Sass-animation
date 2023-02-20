@@ -76,7 +76,9 @@ $font-size-h1-page-411:                 $font-size-normal * 1.75;
 $font-size-h1-page-md:                  $font-size-normal * 1.65;
 $font-size-h1-page-xl:                  $font-size-normal * 1.85;
 $font-size-h1-page-xxl:                 $font-size-normal * 2.05;
+
 $line-height-h1-page:                   $line-height-normal * 1.2;
+
 $font-weight-h1-page:                   500;
 
 $font-size-h1-single:                   $font-size-normal * 1.25;
@@ -88,6 +90,7 @@ $font-size-h1-single-xl:                $font-size-normal * 2;
 $font-size-h1-single-xxl:               $font-size-normal * 2.2;
 
 $font-family-h1-single:                 'Shrikhand', cursive;
+
 $font-weight-h1-single:                 500;
 
 //== h2 ==
@@ -97,15 +100,20 @@ $font-size-h2-home-411:                 $font-size-normal * 1.75;
 $font-size-h2-home-md:                  $font-size-normal * 1.65;
 $font-size-h2-home-xl:                  $font-size-normal * 1.75;
 $font-size-h2-home-xxl:                 $font-size-normal * 1.875;
+
 $line-height-h2-home:                   $line-height-normal * 1.2;
 
 $font-size-h2-single:                   $font-size-normal * 1.125;
 $font-size-h2-single-md:                $font-size-normal * 1.15;
 $font-size-h2-single-xl:                $font-size-normal * 1.25;
 $font-size-h2-single-xxl:               $font-size-normal * 1.35;
+
 $line-height-h2-single:                 $line-height-normal * 1.75;
+
 $font-weight-h2-single:                 400;
+
 $txt-transform-h2-single:               uppercase;
+
 $color-h2-single:                       $black-light;
 
 //== h3 ==
@@ -113,13 +121,16 @@ $font-size-h3-single:                   $font-size-normal * 1.22;
 $font-size-h3-single-md:                $font-size-normal * 1.15;
 $font-size-h3-single-lg:                $font-size-normal * 1.2;
 $font-size-h3-single-xl:                $font-size-normal * 1.25;// Not used
+
 $line-height-h3-single:                 $line-height-normal * 1.75;
 
 //== p ==
 $font-size-p-banner:                    $font-size-normal;
 $font-size-p-banner-375:                $font-size-normal * 1.1;
 $font-size-p-banner-411:                $font-size-normal * 1.2;
+
 $line-height-p-banner:                  $line-height-normal * 1.15;
+
 $font-weight-p:                         400;
 
 
@@ -136,11 +147,14 @@ $color-a-alt:                           $secondary-color;
   * 
   */
 $font-size-loading:                     $font-size-normal * .875;
-$color-loading:                         $white;
+
 $loading-border-top-color:              $secondary-color;
 $loading-border-left-color:             $tertiary-color;
 $loading-border-right-color:            $primary-color;
 $loading-border-bottom-color:           $primary-color;
+
+$color-loading:                         $white;
+
 $bg-color-loading:                      $black;
 
 /**
@@ -148,11 +162,12 @@ $bg-color-loading:                      $black;
   * 
   */
 $font-family-input:                     $font-family-txt;
+
 $font-size-search-form-i:               $font-size-normal * 1.2;
 $font-size-search-form-input:           $font-size-normal * 1.1;
+
 $font-weight-input-value:               500;
-$color-input-value:                     $black-light;
-$color-search-form-i:                   $black-light;
+
 $bg-color-input:                        $transparent;
 
 /**
@@ -163,9 +178,12 @@ $font-size-banner-cta:                  $font-size-normal * .875;
 $font-size-banner-cta-375:              $font-size-normal;
 $font-size-banner-cta-411:              $font-size-normal * 1.1;
 $font-size-banner-cta-xxl:              $font-size-normal * 1.25;
+
 $font-weight-banner-cta:                500;
+
 $color-banner-cta:                      $white;
 $color-banner-cta-alt:                  $white;
+
 $bg-color-banner-cta:                   $main-linear-gradient;
 $bg-color-banner-cta-alt:               $main-linear-gradient-light;
 
@@ -192,14 +210,19 @@ $bg-color-step:                         $grey-light;
 $font-size-h3-card:                     $font-size-normal * 1.2;
 $font-size-p-card:                      $font-size-normal * 1.1;
 $font-size-i-card:                      $font-size-normal * 1.5;
+$font-size-flag-card:                   $font-size-normal * .875;
+$font-size-flag-card-411:               $font-size-normal * .975;
 
 $line-height-p-card:                    $line-height-normal * 1.15;
+
+$font-weight-flag:                      500;
 
 $color-card-a-alt:                      $black;
 $color-card-i:                          $black-light;
 
 $bg-color-card-details:                 $white;
 $bg-color-card-i:                       $main-linear-gradient-reverse;
+$bg-color-card-flag:                    $tertiary-color;
 $bg-color-cards:                        $grey-light;
 
 /**
@@ -210,10 +233,14 @@ $font-size-product-detail:              $font-size-normal * .975;
 $font-size-product-detail-lg:           $font-size-normal * 1.05;
 $font-size-product-detail-xl:           $font-size-normal * 1.1;
 $font-size-i-product:                   $font-size-normal * .975;
+
 $line-height-product-detail:            $line-height-normal * 1.15;
+
 $font-weight-product-detail:            400;
+$font-weight-product-price:             900;
 
 $max-width-product-detail:              255px;
+
 $bg-color-product-icon:                 $white;
 $bg-color-product:                      $white;
 $bg-color-product-right:                $tertiary-color;
@@ -254,22 +281,28 @@ $bg-color-products-first-div:           $grey-light;
 * 
 */
 $font-family-h4-footer:                 'Shrikhand', cursive;
+
 $font-size-h4-footer:                   $font-size-normal * 1.25;
 $font-size-h4-footer-md:                $font-size-normal * 1.15;
 $font-size-h4-footer-xl:                $font-size-normal * 1.25;
 $font-size-h4-footer-xxl:               $font-size-normal * 1.35;
+
 $font-size-a-footer:                    $font-size-normal * 1.1;
 $font-size-a-footer-md:                 $font-size-normal;
 $font-size-a-footer-xl:                 $font-size-normal * 1.05;
+
 $font-size-i-footer:                    $font-size-normal * .8;
+
 $font-weight-h4-footer:                 500;
-$line-height-h4-footer:                 $line-height-normal * 1.15;
 $font-weight-a-footer:                  500;
 $font-weight-a-last-footer:             400;
+
+$line-height-h4-footer:                 $line-height-normal * 1.15;
 $line-height-a-footer:                  $line-height-normal * 1.55;
 
 $color-h4-footer:                       $white;
 $color-a-footer:                        $grey-light;
+
 $bg-color-footer:                       $black-light;
 
 

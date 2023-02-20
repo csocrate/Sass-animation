@@ -2,3 +2,11 @@
   $anim-delay-value: calc($anim-duration / $nb-elt);
   @return $anim-delay-value;
 }
+
+@function color_adaptation($color, $darken_percent: 40%, $lighten_percent: 10%){
+  @if ( lightness($color) > 25% ) {
+    @return darken($color, $darken_percent);
+  } @else {
+    @return lighten($color, $lighten_percent);
+  }
+}

@@ -2,7 +2,6 @@
   i {
     font-size: $font-size-search-form-i;
     padding: 0 .5rem;
-    color: $color-search-form-i;
   }
 
   input {
@@ -12,13 +11,17 @@
     background-color: $bg-color-input;
 
     &[value] {
-      color: $color-input-value;
       font-weight: $font-weight-input-value;
     }
 
     &:focus {
       outline: none;
     }
+  }
+
+  i,
+  input[value] {
+    @include color_adapted_to_bg_color(color_adaptation($bg-color-first-child, $darken_percent: 60%));
   }
 
   button {
