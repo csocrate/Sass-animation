@@ -156,7 +156,7 @@ $loading-border-bottom-color:           $primary-color;
 
 $color-loading:                         $white;
 
-$bg-color-loading:                      $black;
+$bg-color-loading:                      rgb($black, 90%);
 
 /**
   * Search form
