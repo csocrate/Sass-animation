@@ -1,5 +1,8 @@
 .header-site {
+  position: absolute;
   width: 100%;
+  @include box_shadow($amount:70%, $size: 0 2px 6px);
+  background-color: $background-color-header;
 
   > div {
     @include flexbox(null,center,center,null);

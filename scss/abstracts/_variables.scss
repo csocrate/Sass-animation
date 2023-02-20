@@ -28,8 +28,9 @@ $tertiary-color:                       #99E2D0;
 
 $black:                                #000;
 $black-light:                           lighten($black, 30%); // #4D4D4D
-$grey:                                  lighten($black, 88%); // #F2F2F2
-$grey-light:                            lighten($black, 97%); // #F7F7F7
+$grey:                                  lighten($black, 88%); // #E0E0E0
+$grey-light:                            lighten($black, 95%); // #F2F2F2
+$grey-ultra-light:                      lighten($black, 97%); // #F7F7F7
 $primary-color-light:                   lighten($primary-color, 5%); // #A16BE0
 $secondary-color-light:                 lighten($secondary-color, 4%); // #FF8DE0
 $main-linear-gradient:                  linear-gradient($secondary-color, $primary-color);
@@ -191,17 +192,27 @@ $bg-color-banner-cta-alt:               $main-linear-gradient-light;
   * Step how it works
   * 
   */
-$font-size-nb-step:                     $font-size-normal * .875;
+$font-size-h3-home:                     $font-size-normal * .875;
+$font-size-h3-home-320:                 $font-size-normal * .95;
+$font-size-h3-home-375:                 $font-size-normal;
+$font-size-h3-home-411:                 $font-size-normal * 1.1;
+
+$line-height-h3-home:                   $line-height-normal * 1.2;
+
+$font-weight-h3-home:                   500;
+
+$font-size-nb-step:                     $font-size-normal * .75;
+$font-size-nb-step-411:                 $font-size-normal * .875;
 $font-weight-nb-step:                   700;
 $color-nb-step:                         $white;
 $bg-color-nb-step:                      $primary-color;
 
-$font-weight-h3-step:                   500;
+$font-size-i-step:                      $font-size-normal * 1.1;
+$font-size-i-step-411:                  $font-size-normal * 1.4;
+$color-i-step-alt:                      $primary-color;
 
-$font-size-i-step:                      $font-size-normal * 1.4;
-$color-i-step:                          $primary-color;
-
-$bg-color-step:                         $grey-light;
+$bg-color-step:                         $grey-ultra-light;
+$bg-color-step-alt:                     $grey-light;
 
 /**
   * Card
@@ -223,7 +234,7 @@ $color-card-i:                          $black-light;
 $bg-color-card-details:                 $white;
 $bg-color-card-i:                       $main-linear-gradient-reverse;
 $bg-color-card-flag:                    $tertiary-color;
-$bg-color-cards:                        $grey-light;
+$bg-color-cards:                        $grey-ultra-light;
 
 /**
   * Product
@@ -255,6 +266,7 @@ $anim-duration-product:                 1000ms;
   * 
   */
 $font-size-i-header:                    $font-size-normal * 1.55;
+$background-color-header:               $white;
 
 /**
   * Banner section
@@ -266,7 +278,7 @@ $font-size-i-banner-single-375:         $font-size-normal * 1.55;
 $font-size-i-banner-single-411:         $font-size-normal * 1.75;
 
 $bg-color-first-child:                  $grey;
-$bg-color-last-child:                   $grey-light;
+$bg-color-last-child:                   $grey-ultra-light;
 $bg-color-banner-single-page:           $black-light;
 
 /**
@@ -274,7 +286,7 @@ $bg-color-banner-single-page:           $black-light;
   * 
   */
 $bg-color-products:                     $white;
-$bg-color-products-first-div:           $grey-light;
+$bg-color-products-first-div:           $grey-ultra-light;
 
 /**
 * Footer
@@ -301,7 +313,7 @@ $line-height-h4-footer:                 $line-height-normal * 1.15;
 $line-height-a-footer:                  $line-height-normal * 1.55;
 
 $color-h4-footer:                       $white;
-$color-a-footer:                        $grey-light;
+$color-a-footer:                        $grey-ultra-light;
 
 $bg-color-footer:                       $black-light;
 

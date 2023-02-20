@@ -112,7 +112,20 @@ h2 {
 
 h3 {
   &.h3-step {
-    font-weight: $font-weight-h3-step;
+    font-size: $font-size-h3-home;
+    font-weight: $font-weight-h3-home;
+
+    @media (min-width: $breakpoint-320) {
+      font-size: $font-size-h3-home-320;
+    }
+
+    @media (min-width: $breakpoint-375) {
+      font-size: $font-size-h3-home-375;
+    }
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-h3-home-411;
+    }
   }
 
   &.h3-card {
@@ -242,6 +255,10 @@ span {
     font-size: $font-size-nb-step;
     font-weight: $font-weight-nb-step;
     color: $color-nb-step;
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-nb-step-411;
+    }
   }
 
   &.flag {
@@ -278,14 +295,34 @@ span {
  */
 
 //== Icon ==
-.card {
-  i {
-    font-size: $font-size-i-card;
-  }
-}
 .header-site {
   i  {
     font-size: $font-size-i-header;
+  }
+}
+.step {
+  > div {
+    &:hover {
+      background-color: $bg-color-step-alt;
+      i {
+        color: $color-i-step-alt;      
+      }
+    }
+  }
+
+  i {
+    font-size: $font-size-i-step;
+    @include color_adapted_to_bg_color(color_adaptation($bg-color-step, $darken_percent: 30%));
+    transition: .5s;
+
+    @media (min-width: $breakpoint-411) {
+      font-size: $font-size-i-step-411;
+    }
+  }
+}
+.card {
+  i {
+    font-size: $font-size-i-card;
   }
 }
 .wrapper--single-page {
