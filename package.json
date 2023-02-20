@@ -8,5 +8,8 @@
     "build:prod": "sass --no-source-map --style compressed ./scss/main.scss:./public/css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
 }
