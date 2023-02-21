@@ -62,11 +62,12 @@
   
         > div {
           @include flexbox(null, center, center, wrap);
+          @include max_width(100%, 400px);
           gap: 1.25rem;
   
           @media (min-width: $breakpoint-lg) {
             gap: 1.5rem;
-            @include max_width(100%, 845px);
+            max-width: 845px;
           }
         }  
       }

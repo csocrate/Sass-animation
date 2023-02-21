@@ -21,6 +21,22 @@
       padding-bottom: 2.5rem;
     }
 
+    svg {
+      width: 130px;
+
+      @media (min-width: $breakpoint-320) {
+        width: 140px;
+      }
+  
+      @media (min-width: $breakpoint-375) {
+        width: 160px;
+      }
+  
+      @media (min-width: $breakpoint-411) {
+        width: 180px;
+      }
+    }
+
     a {
       display: inline-block;
     }
