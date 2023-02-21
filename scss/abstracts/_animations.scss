@@ -10,6 +10,15 @@
   }
 }
 
+@keyframes rotate_1turn_reverse {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+
 @keyframes bg_visibility {
   100% {
     visibility: hidden; 
@@ -41,8 +50,7 @@
         -webkit-text-fill-color: transparent;
         opacity: 0;
 
-        &:hover,
-        &:active {
+        &:hover {
           animation: liked 300ms forwards;
         }        
       }
