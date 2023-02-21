@@ -32,8 +32,16 @@
         width: 160px;
       }
   
-      @media (min-width: $breakpoint-411) {
-        width: 180px;
+      @media (min-width: $breakpoint-md) {
+        width: 160px;
+      }
+  
+      @media (min-width: $breakpoint-lg) {
+        width: 140px;
+      }
+  
+      @media (min-width: $breakpoint-xxl) {
+        width: 155px;
       }
     }
 
@@ -55,6 +63,4 @@
       order: 2;
     }
   }
-
-
 }
