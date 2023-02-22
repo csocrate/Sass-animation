@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR .HOW-IT-WORKS | LAYOUT | HOMEPAGE
+   -------------------------------------------------- */
+
 .how-it-works {
   > div {
     @include flexbox(column,null,null,null);

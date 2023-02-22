@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR .PRODUCT | COMPONENTS | MENU PAGE
+   -------------------------------------------------- */
+
 .product {
   @include flexbox(null, space-between, center, null);
   width: 100%;

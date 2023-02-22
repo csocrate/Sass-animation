@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR .FOOTER | LAYOUT
+   -------------------------------------------------- */
+
 .footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -38,10 +42,25 @@
       > div  {
         @include flexbox(column, null, null, null);
 
-        a {
+        a { 
+          &:hover {
+            span {
+              border-bottom-color: $border-bottom-color-footer-alt;
+            }
+          }
+      
+          span {
+            padding-bottom: .03rem;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: $border-bottom-color-footer;
+            transition: .5s;
+          }
+
           i {
             margin-right: .5rem;
           }
+
           &:last-child {
             i {
               font-size: $font-size-i-footer;

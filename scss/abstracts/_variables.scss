@@ -6,11 +6,11 @@
   * Breakpoints
   * 
   */
-$breakpoint-320:                       '320px';
-$breakpoint-375:                       '375px';
-$breakpoint-411:                       '411px';
-$breakpoint-md:                        '768px';
-$breakpoint-lg:                        '992px'; 
+$breakpoint-320:                      '320px';
+$breakpoint-375:                      '375px';
+$breakpoint-411:                      '411px';
+$breakpoint-md:                       '768px';
+$breakpoint-lg:                       '992px'; 
 $breakpoint-xl:                       '1400px';
 $breakpoint-xxl:                      '1600px';
 
@@ -23,17 +23,17 @@ $secondary-color:                      #FF79DA;
 $tertiary-color:                       #99E2D0;
 
 $black:                                #000;
-$black-light:                           lighten($black, 30%); // #4D4D4D
-$grey:                                  lighten($black, 88%); // #E0E0E0
-$grey-light:                            lighten($black, 95%); // #F2F2F2
-$grey-ultra-light:                      lighten($black, 97%); // #F7F7F7
-$primary-color-light:                   lighten($primary-color, 5%); // #A16BE0
-$secondary-color-light:                 lighten($secondary-color, 4%); // #FF8DE0
-$main-linear-gradient:                  linear-gradient($secondary-color, $primary-color);
-$main-linear-gradient-reverse:          linear-gradient($primary-color, $secondary-color);
-$main-linear-gradient-light:            linear-gradient($secondary-color-light, $primary-color-light);
-$secondary-color-light:                 lighten($secondary-color, 80%);
-$transparent:                           transparent;
+$black-light:                          lighten($black, 30%); // #4D4D4D
+$grey:                                 lighten($black, 88%); // #E0E0E0
+$grey-light:                           lighten($black, 95%); // #F2F2F2
+$grey-ultra-light:                     lighten($black, 97%); // #F7F7F7
+$primary-color-light:                  lighten($primary-color, 5%); // #A16BE0
+$secondary-color-light:                lighten($secondary-color, 4%); // #FF8DE0
+$main-linear-gradient:                 linear-gradient($secondary-color, $primary-color);
+$main-linear-gradient-reverse:         linear-gradient($primary-color, $secondary-color);
+$main-linear-gradient-light:           linear-gradient($secondary-color-light, $primary-color-light);
+$secondary-color-light:                lighten($secondary-color, 80%);
+$transparent:                          transparent;
 $white:                                #FFF;
 
 /**
@@ -132,7 +132,6 @@ $font-weight-p:                         400;
 
 //== a ==
 $color-a:                               currentColor;
-$color-a-alt:                           $secondary-color;
 
 // --------------------------------------------------
 // COMPONENTS
@@ -267,14 +266,14 @@ $background-color-header:               $white;
   * Banner section
   * 
   */
-$font-size-i-banner-single:             $font-size-normal * 1.35;
-$font-size-i-banner-single-320:         $font-size-normal * 1.45;
-$font-size-i-banner-single-375:         $font-size-normal * 1.55;
-$font-size-i-banner-single-411:         $font-size-normal * 1.75;
+$font-size-i-banner-restaurant:             $font-size-normal * 1.35;
+$font-size-i-banner-restaurant-320:         $font-size-normal * 1.45;
+$font-size-i-banner-restaurant-375:         $font-size-normal * 1.55;
+$font-size-i-banner-restaurant-411:         $font-size-normal * 1.75;
 
-$bg-color-first-child:                  $grey;
-$bg-color-last-child:                   $grey-ultra-light;
-$bg-color-banner-single-page:           $black-light;
+$bg-color-first-child:                      $grey;
+$bg-color-last-child:                       $grey-ultra-light;
+$bg-color-banner-menu-page:                 $black-light;
 
 /**
   * Products section
@@ -309,6 +308,9 @@ $line-height-a-footer:                  $line-height-normal * 1.55;
 
 $color-h4-footer:                       $white;
 $color-a-footer:                        $grey-ultra-light;
+
+$border-bottom-color-footer:            $transparent;
+$border-bottom-color-footer-alt:        $primary-color;
 
 $bg-color-footer:                       $black-light;
 

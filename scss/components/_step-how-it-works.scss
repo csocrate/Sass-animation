@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR .STEP | COMPONENTS | HOMEPAGE
+   -------------------------------------------------- */
+
 .step {
   @include flexbox(null,center,null,wrap);
   gap: 1.75rem;

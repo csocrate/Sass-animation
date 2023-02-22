@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR .LOADING-SPINNER | COMPONENTS | HOMEPAGE
+   -------------------------------------------------- */
+
 .loading-spinner {
   @include flexbox(null,center,center,null);
   width: 100%;
@@ -15,15 +19,15 @@
     height: 12rem;
 
     &:before {
-      width: 100%;
-      height: 100%;
-      animation: rotate_1turn .7s 4 linear;
+      width: 80%;
+      height: 80%;
+      animation-name: rotate_1turn;
     }
 
     &:after {
-      width: 80%;
-      height: 80%;
-      animation: rotate_1turn_reverse .7s 4 linear;
+      width: 100%;
+      height: 100%;
+      animation-name: rotate_1turn_reverse;
     }
 
     &:before,
@@ -31,7 +35,7 @@
       position: absolute;
       display: block;
       content: "";
-      border-width: 4px;
+      border-width: 3px;
       border-style: solid;
       border-top-color: $loading-border-top-color;
       border-left-color: $loading-border-left-color;
@@ -39,9 +43,12 @@
       border-bottom-color: $loading-border-bottom-color;
       border-radius: 50%;
       padding: 1rem;
+      animation-duration: .7s;
+      animation-timing-function: linear;
+      animation-iteration-count: 4;
     }
 
-    span {
+    span { /* Loading text */
       display: inline-block;
       position: fixed;
       font-weight: 400;

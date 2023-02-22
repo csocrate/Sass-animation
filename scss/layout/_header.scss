@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR .HEADER-SITE | LAYOUT
+   -------------------------------------------------- */
+
 .header-site {
   position: absolute;
   width: 100%;
@@ -50,7 +54,7 @@
     }
   }
 
-  &--single-page {
+  &--menu-page {
     a {
       order: 1;
       position: absolute;

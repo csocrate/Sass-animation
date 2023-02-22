@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   SETTING FOR BASIC STYLE
+   -------------------------------------------------- */
+
 * {
   margin: 0;
 }
@@ -33,22 +37,23 @@
     }
   }
 
-  .how-it-works,
-  .cards {
-    > div {
-      @include max_width(90%, 1400px);
-    }
-  }
-
+  /**
+    * Sections
+    * 
+    */
   .how-it-works,
   .cards {
     padding: 3rem 0 4.25rem;
-  }
+    
+    > div {
+      @include max_width(90%, 1400px);
+    }
+  } /* End Sections */
 
   a {
     text-decoration: none;
     color: $color-a;
-    transition: .5s ease;
+    transition: .5s;
   }
 
   img {
