@@ -21,7 +21,7 @@
 
   i,
   input[value] {
-    @include color_adapted_to_bg_color(color_adaptation($bg-color-first-child, $darken_percent: 60%));
+    @include color_matched_to_bg_color(matching_color($bg-color-first-child, $darken_percent: 60%));
   }
 
   button {

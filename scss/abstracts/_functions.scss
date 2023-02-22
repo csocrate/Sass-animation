@@ -1,9 +1,23 @@
 @function layering($anim-duration, $nb-elt) {
+  // Divide animation duration value by number of elements concerned by the animation
+  //
+  // Example for 1000ms and 4 elements layering(10000, 4)
+  // @param int $anim-duration
+  // @param int $nb-elt
+  // @return int $anim-delay-value Result used as animation delay value
   $anim-delay-value: calc($anim-duration / $nb-elt);
   @return $anim-delay-value;
 }
-
-@function color_adaptation($color, $darken_percent: 40%, $lighten_percent: 10%){
+ 
+@function matching_color($color, $darken_percent: 40%, $lighten_percent: 10%){
+  // Make a color according to the lightness of the background color
+  //
+  // Example matching_color($grey, 30%, 15%)
+  // @param $color color value (#000, green...)
+  // @param $darken_percent
+  // @param $lighten_percent
+  // @return darken($color, $darken_percent)
+  // @return lighten($color, $lighten_percent)
   @if ( lightness($color) > 25% ) {
     @return darken($color, $darken_percent);
   } @else {

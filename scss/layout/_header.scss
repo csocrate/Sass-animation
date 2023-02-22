@@ -11,12 +11,12 @@
     height: 4rem;
     padding: 2rem 0;
 
-    @media (min-width: $breakpoint-xxl ) {
+    @media (min-width: $breakpoint-xl ) {
       padding-top: 2.25rem;
       padding-bottom: 2.25rem;
     }
   
-    @media (min-width: $breakpoint-xxxl ) {
+    @media (min-width: $breakpoint-xxl ) {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
     }
@@ -40,7 +40,7 @@
         width: 140px;
       }
   
-      @media (min-width: $breakpoint-xxl) {
+      @media (min-width: $breakpoint-xl) {
         width: 155px;
       }
     }

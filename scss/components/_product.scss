@@ -16,15 +16,15 @@
     width: 100%;
   }
 
-  @media (min-width: $breakpoint-xxl) {
+  @media (min-width: $breakpoint-xl) {
     width: 95%;
   }
 
-  @media (min-width: $breakpoint-xxl) {
+  @media (min-width: $breakpoint-xl) {
     width: 80%;
   }
 
-  @media (min-width: $breakpoint-xxxl) {
+  @media (min-width: $breakpoint-xxl) {
     width: 75%;
   }
   
@@ -44,7 +44,7 @@
       width: 20%;
     }
 
-      & > i {
+      & > i { /* Check mark icon */
         animation: rotate_1turn 800ms;
       }
     }
@@ -60,6 +60,7 @@
 
     h3,
     span {
+      /* Ellipsis effect when Check mark product is animated */
       width: 100%;
       text-overflow: ellipsis;
       overflow: hidden;

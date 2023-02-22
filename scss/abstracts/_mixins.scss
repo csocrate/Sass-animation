@@ -1,24 +1,11 @@
+// Box shadow
+//
 @mixin box_shadow($color:$black, $amount:85%, $size: 0 5px 12px) {
   box-shadow: lighten($black, $amount) $size;
 }
 
-/*
- * Main call to action
- */
-@mixin cta_button($vertical-padding, $horizontal-padding, $size, $bg-color) {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: $vertical-padding $horizontal-padding;
-  border-radius: $size;
-  @include box_shadow($amount:65%);
-  background: $bg-color;
-
-  &:hover {            
-    box-shadow: rgba($black,.5) 0 7px 12px;
-  }
-}
-
+// Main call to action
+//
 @mixin cta_button_base($size, $bg-color) {
   display: inline-block;
   margin-top: 1rem;
@@ -42,9 +29,10 @@
   font-weight: $font-weight;
   color: $color;
   cursor: pointer;
-}
-/* End Main call to action */
+} // End Main call to action
 
+// Flexbox base
+//
 @mixin flexbox($direction, $justify, $align, $wrap) {
   display: flex;
   flex-direction: $direction;
@@ -53,19 +41,18 @@
   flex-wrap: $wrap;
 }
 
+// Max width
+//
 @mixin max_width($width, $max-width) {
   width: $width;
   max-width: $max-width;
   margin: 0 auto 
 }
 
-@mixin text_overflow($value: ellipsis($max-width)) {
-  max-width: 230px;
-  text-overflow: $value;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@mixin color_adapted_to_bg_color($color: color_adaptation($tertiary-color)) {
+// Color property with its value matched to the background color value
+//
+// @see matching_color() function
+//
+@mixin color_matched_to_bg_color($color: matching_color($tertiary-color)) {
   color: $color;
 }

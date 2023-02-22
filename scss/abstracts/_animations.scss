@@ -1,19 +1,13 @@
-/**
-  * Loading spinner
-  */
+// Loading spinner -------------------------------------------
+//
 @keyframes rotate_1turn {
-  0% {
-    transform: rotate(0turn);
-  }
+  // Used for Check mark icon too
   100% {
     transform: rotate(1turn);
   }
 }
 
 @keyframes rotate_1turn_reverse {
-  0% {
-    transform: rotate(0turn);
-  }
   100% {
     transform: rotate(-1turn);
   }
@@ -24,11 +18,10 @@
     visibility: hidden; 
     opacity: 0;
   }
-} /* End Loading spinner */
+} // End Loading spinner
 
-/**
-  * Filled heart icon
-  */
+// Filled heart icon -------------------------------------------
+//
 @mixin animated-heart($color:$color-card-i, $bg-color:$bg-color-card-i) {
   i {
     &.fa-heart {
@@ -38,7 +31,7 @@
         -webkit-text-stroke: 1px $white; /* Similar to .fa-light appareance */
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: $color;
+        color: $color;
       }
 
       &.fa-solid {
@@ -46,8 +39,9 @@
         top: 0;
         left: 0;
         background: $bg-color;
+        background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         opacity: 0;
 
         &:hover {
@@ -59,6 +53,7 @@
 }
 
 @keyframes liked {
+  // Filling animation
   0% {
     opacity: .5;
     transform: scaleX(.15);
@@ -78,12 +73,14 @@
   100% {
     transform: scaleX(1);
   }
-} /* End Filled heart icon */
+} // End Filled heart icon
 
-/**
-  * Check mark
-  */
+// Product entrance -------------------------------------------
+//
+// @see layering() function
+//
 @mixin one_by_one($anim-duration, $nb-elt) {
+  // Each element appears one by one with a different delay
   $anim-delay: layering($anim-duration, $nb-elt);
   
   @for $i from 1 through $nb-elt {
@@ -94,6 +91,7 @@
 }
 
 @mixin opacity($from, $to) {
+  // Allows Check mark box animation
   @keyframes visibility{
     0% {
       transform: translateY(8px);
@@ -104,4 +102,4 @@
       opacity: $to;
     }
   }
-} /* End Check mark */
+} // End Product entrance

@@ -23,11 +23,11 @@ h1 {
       font-size: $font-size-h1-page-md;
     }
 
-    @media (min-width: $breakpoint-xxl) {
+    @media (min-width: $breakpoint-xl) {
       font-size: $font-size-h1-page-xl;
     }
 
-    @media (min-width: $breakpoint-xxxl) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-h1-page-xxl;
     }
 
@@ -52,12 +52,8 @@ h1 {
         font-size: $font-size-h1-single-md;
       }
   
-      @media (min-width: $breakpoint-xxl) {
+      @media (min-width: $breakpoint-xl) {
         font-size: $font-size-h1-single-xl;
-      }
-  
-      @media (min-width: $breakpoint-xxxl) {
-        font-size: $font-size-h1-single-xxl;
       }
     }
   }
@@ -80,11 +76,11 @@ h2 {
       font-size: $font-size-h2-home-md;
     }
 
-    @media (min-width: $breakpoint-xxl) {
+    @media (min-width: $breakpoint-xl) {
       font-size: $font-size-h2-home-xl;
     }
 
-    @media (min-width: $breakpoint-xxxl) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-h2-home-xxl;
     }
   }
@@ -100,11 +96,11 @@ h2 {
       font-size: $font-size-h2-single-md;
     }
 
-    @media (min-width: $breakpoint-xxl) {
+    @media (min-width: $breakpoint-xl) {
       font-size: $font-size-h2-single-xl;
     }
 
-    @media (min-width: $breakpoint-xxxl) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-h2-single-xxl;
     }
   }
@@ -158,11 +154,11 @@ h4 {
     font-size: $font-size-h4-footer-md;
   }
 
-  @media (min-width: $breakpoint-xxl) {
+  @media (min-width: $breakpoint-xl) {
     font-size: $font-size-h4-footer-xl;
   }
 
-  @media (min-width: $breakpoint-xxxl) {
+  @media (min-width: $breakpoint-xxl) {
     font-size: $font-size-h4-footer-xxl;
   }
 }
@@ -207,7 +203,7 @@ a {
       font-size: $font-size-banner-cta-411;
     }
 
-    @media (min-width: $breakpoint-xxxl) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-banner-cta-xxl;
     }
   }
@@ -227,7 +223,7 @@ a {
       font-size: $font-size-a-footer-md;
     }
 
-    @media (min-width: $breakpoint-xxxl) {
+    @media (min-width: $breakpoint-xxl) {
       font-size: $font-size-a-footer-xl;
     }
   }
@@ -264,7 +260,7 @@ span {
   &.flag {
     font-size: $font-size-flag-card;
     font-weight: $font-weight-flag;
-    @include color_adapted_to_bg_color;
+    @include color_matched_to_bg_color;
 
     @media (min-width: $breakpoint-411) {
       font-size: $font-size-flag-card-411;
@@ -280,7 +276,7 @@ span {
       font-size: $font-size-product-detail-lg;
     }
 
-    @media (min-width: $breakpoint-xxl) {
+    @media (min-width: $breakpoint-xl) {
       font-size: $font-size-product-detail-xl;
     }
   }
@@ -312,7 +308,7 @@ span {
 
   i {
     font-size: $font-size-i-step;
-    @include color_adapted_to_bg_color(color_adaptation($bg-color-step, $darken_percent: 30%));
+    @include color_matched_to_bg_color(matching_color($bg-color-step, $darken_percent: 45%));
     transition: .5s;
 
     @media (min-width: $breakpoint-411) {
